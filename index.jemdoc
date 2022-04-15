@@ -23,6 +23,7 @@ The utimate goal of my research is to develop theoretical foundations and practi
 - Efficient and effective algorithms for black/grey-box combinatorial optimization problems arising in real-world applications
 
 == Recent News
+- Apr 15, 2022: One paper accepted by ICSI'2022.
 - Dec 25, 2021: I (together with Prof. Ke Tang) will give a tutorial "Learn to Optimize" at WCCI 2022.
 - Mar 21, 2021: I will give a talk "Co-evolved Parallel Algorithm Portfolios" at ECOLE 2021.
 
@@ -36,6 +37,8 @@ The utimate goal of my research is to develop theoretical foundations and practi
 . *Shengcai Liu*, Ke Tang, and Xin Yao. Generative Adversarial Construction of Parallel Portfolios. /IEEE Transactions on Cybernetics/, 2022, 52(2): 784-795. \[[http://senshineL.github.io/files/GAST_final.pdf preprint PDF]\] \[[https://ieeexplore.ieee.org/abstract/document/9082022 PDF]\]
 
 === Conference Papers
+. Fu Peng, *Shengcai Liu*\*, and Ke Tang. Training Quantized Deep Neural Networks via
+Cooperative Coevolution. In: /Proceedings of the 13th International Conference on Swarm Intelligence (ICSI'2022)/. \[[https://arxiv.org/pdf/2112.14834.pdf preprint PDF]\]
 . Kangfei Zhao, *Shengcai Liu*\*, Yu Rong, and Jeffrey Xu Yu. Towards Feature-free TSP Solver Selection: A Deep Learning Approach. In: /Proceedings of the 20th International Joint Conference on Neural Networks (IJCNN'2021)/, Virtual, 2021, 1-8. \[[https://ieeexplore.ieee.org/abstract/document/9533538 PDF]\]
 . *Shengcai Liu*, Ke Tang, and Xin Yao. On Performance Estimation in Automatic Algorithm Configuration. In: /Proceedings of The 34th AAAI Conference on Artificial Intelligence (AAAI'2020)/, New York, NY, 2020, 2384-2391. \[[https://ojs.aaai.org/index.php/AAAI/article/view/5618 PDF]\]
 . *Shengcai Liu*, Ke Tang, and Xin Yao. Automatic Construction of Parallel Portfolios via Explicit Instance Grouping. In: /Proceedings of The 33rd AAAI Conference on Artificial Intelligence (AAAI'2019)/, Honululu, HI, 2019, 1560-1567. \[[https://ojs.aaai.org/index.php/AAAI/article/view/3970 PDF]\]
@@ -43,8 +46,6 @@ The utimate goal of my research is to develop theoretical foundations and practi
 
 === Preprints
 . Rui He, *Shengcai Liu*\*, Shan He, Ke Tang. Multi-Domain Active Learning: A Comparative Study. /Arxiv preprint arxiv:2106.13516/. \[[https://arxiv.org/pdf/2106.13516.pdf preprint PDF]\]
-. Fu Peng, *Shengcai Liu*\*, and Ke Tang. Training Quantized Deep Neural Networks via
-Cooperative Coevolution. /ArXiv preprint arXiv:2112.14834/. \[[https://arxiv.org/pdf/2112.14834.pdf preprint PDF]\]
 . *Shengcai Liu*, Ning Lu, Wenjing Hong, Chao Qian, and Ke Tang. HydraText: Multi-objective Optimization for Adversarial Textual Attack. /ArXiv preprint arXiv:2111.01528/. \[[https://arxiv.org/pdf/2111.01528.pdf preprint PDF]\]
 
 == Invited Talks
