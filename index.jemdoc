@@ -23,9 +23,8 @@ The utimate goal of my research is to develop theoretical foundations and practi
 - Efficient and effective algorithms for black/grey-box combinatorial optimization problems arising in real-world applications
 
 == Recent News
+- Jul 18, 2022: I (together with Prof. Ke Tang) gave a tutorial "Learn to Optimize" at WCCI 2022.
 - Apr 15, 2022: One paper accepted by ICSI'2022.
-- Dec 25, 2021: I (together with Prof. Ke Tang) will give a tutorial "Learn to Optimize" at WCCI 2022.
-- Mar 21, 2021: I will give a talk "Co-evolved Parallel Algorithm Portfolios" at ECOLE 2021.
 
 == Publications \[[https://scholar.google.com/citations?user=tV0nV3oAAAAJ&hl=en Google Scholar]\]
 \* indicates that I am the corresponding author
@@ -53,6 +52,7 @@ Cooperative Coevolution. In: /Proceedings of the 13th International Conference o
 . *Shengcai Liu*, Yufan Wei, Ke Tang, A.K. Qin, and Xin Yao. Qos-aware Long-Term Based Service Composition in Cloud Computing. In: /Proceedings of The 14th IEEE Congress on Evolutionary Computation (CEC'2015)/, Sendai, Japan, 2015, 3362-3369. \[[https://ieeexplore.ieee.org/abstract/document/7257311 PDF]\]
 
 == Invited Talks
+. Learn to Optimize @ The 2022 IEEE World Congress on Computational Intelligence (WCCI'2022). Jul 18, 2022. \[[http://senshineL.github.io/files/L2O_tutorial.pdf Slides]\]
 . Co-Evolved Parallel Algorithm Portfolios @ The 7th Workshop on Evolutionary Computation and Learning (ECOLE'2021). May 15, 2021.
 . Algorithm Portfolios for Beginners @ Magic-Data (数据魔术师). April 6, 2021. (online)
 
