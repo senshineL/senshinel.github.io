@@ -1561,5 +1561,5 @@ def main():
 #
 if __name__ == '__main__':
   # set font-family for paragraph
-  p_str = "<p class=\"georgia-tabular\">"
+  p_str = "<p>"
   main()

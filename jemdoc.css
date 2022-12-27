@@ -6,17 +6,17 @@ table#tlayout {
     background: white;
 }
 
-.georgia {
+/* .georgia {
 	font-family: georgia, serif;
-}
+} */
 
-@font-face {
+/* @font-face {
 	font-family: "tabular-numbers";
 	src: local("charter"), local("cambria");
 	unicode-range: U+0030-0039;
-}
+} */
 
-.georgia-tabular {
+/* .georgia-tabular {
 	font-family: "tabular-numbers", georgia, bitstream charter, serif;
 }
 
@@ -26,11 +26,13 @@ table#tlayout {
 
 .cambria {
 	font-family: cambria, charter, bitstream charter, "tabular-numbers", georgia, serif;
-}
+} */
 
 body {
 	background: white;
-	font-family: 'georgia-tabular';
+	/* font-family: 'Times New Roman', serif; */
+	font-family: 'Verdana';
+	font-size: 18px;
 	padding-bottom: 8px;
 	margin: 0;
 }
