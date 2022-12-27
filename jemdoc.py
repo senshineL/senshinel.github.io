@@ -735,7 +735,7 @@ def br(b, f, tableblock=False):
   # Deal with paragraph break. Caution! Should only use when we're already in
   # a paragraph.
   r = re.compile(r"(?<!\\)\\p", re.M + re.S)
-  b = re.sub(r, r'</p><p>', b)
+  b = re.sub(r, r'</p>%s' % p_str, b)
 
   if tableblock:
     # Deal with ||, meaning </td></tr><tr><td>
@@ -1043,7 +1043,7 @@ def dashlist(f, ordered=False):
       # same level, make a new list item.
       out(f.outf, '\n</li>\n<li>')
 
-    out(f.outf, '<p>' + br(s, f) + '</p>')
+    out(f.outf, p_str + br(s, f) + '</p>')
     level = newlevel
 
   for i in range(level):
@@ -1064,7 +1064,7 @@ def colonlist(f):
     rest = g.group(2)
 
     hb(f.outf, '<dt>|</dt>\n', br(defpart, f))
-    hb(f.outf, '<dd><p>|</p></dd>\n', br(rest, f))
+    hb(f.outf, '<dd>' + p_str + '|</p></dd>\n', br(rest, f))
 
   out(f.outf, '</dl>\n')
 
@@ -1470,7 +1470,7 @@ def procfile(f):
         if tableblock:
           hb(f.outf, '|\n', s)
         else:
-          hb(f.outf, '<p>|</p>\n', s)
+          hb(f.outf, p_str + '|</p>\n', s)
 
   if showfooter and (showlastupdated or showsourcelink):
     out(f.outf, f.conf['footerstart'])
@@ -1560,4 +1560,6 @@ def main():
 
 #
 if __name__ == '__main__':
+  # set font-family for paragraph
+  p_str = "<p class=\"georgia-tabular\">"
   main()

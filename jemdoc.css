@@ -6,9 +6,31 @@ table#tlayout {
     background: white;
 }
 
+.georgia {
+	font-family: georgia, serif;
+}
+
+@font-face {
+	font-family: "tabular-numbers";
+	src: local("charter"), local("cambria");
+	unicode-range: U+0030-0039;
+}
+
+.georgia-tabular {
+	font-family: "tabular-numbers", georgia, bitstream charter, serif;
+}
+
+.charter {
+	font-family: charter, bitstream charter, "tabular-numbers", georgia, serif;
+}
+
+.cambria {
+	font-family: cambria, charter, bitstream charter, "tabular-numbers", georgia, serif;
+}
+
 body {
 	background: white;
-	font-family: 'Times New Roman', serif;
+	font-family: 'georgia-tabular';
 	padding-bottom: 8px;
 	margin: 0;
 }
