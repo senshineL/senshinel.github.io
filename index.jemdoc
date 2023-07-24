@@ -31,11 +31,11 @@ Now I am working on:
 # - Efficient and effective algorithms for black/grey-box combinatorial optimization problems arising in real-world applications, e.g., adversarial attack
 
 == Recent News
-- Jul 16, 20203: One paper accepted by ECAI'2023
-- Apr 9, 2023: One paper accepted by IEEE CIM
-- Jan 10, 2023: One paper accepted by ACM TIST
-- Nov 19, 2022: One paper accepted by AAAI'2023
-- Oct 9, 2022: One paper accepted by IEEE TETCI
+- Jul 16, 2023: Our work "Multi-Domain Learning From Insufficient Annotations" has been accepted by ECAI'2023
+- Apr 9, 2023: Our work "How Good Is Neural Combinatorial Optimization? A Systematic Evaluation on the Traveling Salesman Problem" has been accepted by IEEE CIM
+- Jan 10, 2023: Our work "Saliency Attack: Towards Imperceptible Black-box Adversarial Attack" has been accepted by ACM TIST
+- Nov 19, 2022: Our work "Reliable Robustness Evaluation via Automatically Constructed Attack Ensembles" has been accepted by AAAI'2023
+- Oct 9, 2022: Our work "Multi-Domain Active Learning: Literature Review and Comparative Study" has been accepted by IEEE TETCI
 # - Jul 18, 2022: I (together with Prof. Ke Tang) gave a tutorial "Learn to Optimize" at WCCI 2022.
 
 == Selected Publications
