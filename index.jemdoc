@@ -31,14 +31,15 @@ Now I am working on:
 # - Efficient and effective algorithms for black/grey-box combinatorial optimization problems arising in real-world applications, e.g., adversarial attack
 
 == Recent News
+- Feb 29, 2024: Our work "Effective and Imperceptible Adversarial Textual Attack via Multi-objectivization" has been accepted by ACM TELO
 - Nov 23, 2023: Our work "Datastore Distillation for Nearest Neighbor Machine Translation" has been accepted by IEEE TASL
 - Aug 18, 2023: I experienced a wonderful week attending the [https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/23332 Dagstuhl Seminar] held in a secluded village in Germany.
 - Aug 6, 2023: Our work "A Population Cooperation Based Particle Swarm Optimization Algorithm for Large-Scale Multi-Objective Optimization" has been accepted by SWEVO
 - Jul 16, 2023: Our work "Multi-Domain Learning From Insufficient Annotations" has been accepted by ECAI'2023
 - Apr 9, 2023: Our work "How Good Is Neural Combinatorial Optimization? A Systematic Evaluation on the Traveling Salesman Problem" has been accepted by IEEE CIM
-- Jan 10, 2023: Our work "Saliency Attack: Towards Imperceptible Black-box Adversarial Attack" has been accepted by ACM TIST
-- Nov 19, 2022: Our work "Reliable Robustness Evaluation via Automatically Constructed Attack Ensembles" has been accepted by AAAI'2023
-- Oct 9, 2022: Our work "Multi-Domain Active Learning: Literature Review and Comparative Study" has been accepted by IEEE TETCI
+# - Jan 10, 2023: Our work "Saliency Attack: Towards Imperceptible Black-box Adversarial Attack" has been accepted by ACM TIST
+# - Nov 19, 2022: Our work "Reliable Robustness Evaluation via Automatically Constructed Attack Ensembles" has been accepted by AAAI'2023
+# - Oct 9, 2022: Our work "Multi-Domain Active Learning: Literature Review and Comparative Study" has been accepted by IEEE TETCI
 # - Jul 18, 2022: I (together with Prof. Ke Tang) gave a tutorial "Learn to Optimize" at WCCI 2022.
 
 == Selected Publications
@@ -51,9 +52,9 @@ First/corresponding-authored (\*) works listed; see [https://scholar.google.com/
 . Ning Lu, *Shengcai Liu*\*, Rui He, Qi Wang, and Ke Tang. Large Language Models can be Guided to Evade AI-Generated Text Detection. /Arxiv preprint arXiv:2305.10847/. \[[https://arxiv.org/pdf/2305.10847.pdf Arxiv]\]\[[https://github.com/ColinLu50/Evade-GPT-Detector Code]\]
 . Ning Lu, *Shengcai Liu*\*, Zhirui Zhang, Qi Wang, Haifeng Liu, and Ke Tang. Less is More: Understanding Word-level Textual Adversarial Attack via n-gram Frequency Descend. /Arxiv preprint arXiv:2302.02568/. \[[https://arxiv.org/pdf/2302.02568.pdf Arxiv]\]
 # . Xiasheng Ma, *Shengcai Liu*\*, and Wenjing Hong. Automatic Construction of Parallel Algorithm Portfolios for Multi-objective Optimization. /Arxiv preprint arXiv:2211.09498/. \[[https://arxiv.org/pdf/2211.09498.pdf Arxiv]\]
-. *Shengcai Liu*, Ning Lu, Wenjing Hong, Chao Qian, and Ke Tang. Effective and Imperceptible Adversarial Textual Attack via Multi-objectivization. /ArXiv preprint arXiv:2111.01528/. \[[https://arxiv.org/pdf/2111.01528.pdf Arxiv]\]
 
 === Journal Papers
+. *Shengcai Liu*, Ning Lu, Wenjing Hong, Chao Qian, and Ke Tang. Effective and Imperceptible Adversarial Textual Attack via Multi-objectivization. /ACM Transactions on Evolutionary Learning and Optimization/, To Appear. \[[https://arxiv.org/pdf/2111.01528.pdf Arxiv]\]\[[https://github.com/ColinLu50/HydraText Code]\]
 . *Shengcai Liu*, Yu Zhang, Ke Tang, and Xin Yao. How Good Is Neural Combinatorial Optimization? A Systematic Evaluation on the Traveling Salesman Problem. /IEEE Computational Intelligence Magazine/, 2023, 18(3): 14-28. \[[https://ieeexplore.ieee.org/document/10188470 Paper]\]\[[https://arxiv.org/pdf/2209.10913.pdf Arxiv]\]\[[https://github.com/yzhang-gh/benchmarking-tsp Code]\]
 . Zeyu Dai, *Shengcai Liu*\*, Qing Li, and Ke Tang. Saliency Attack: Towards Imperceptible Black-box Adversarial Attack. /ACM Transactions on Intelligent Systems and Technology/, 2023, 14(3): 1-20. \[[https://dl.acm.org/doi/abs/10.1145/3582563 Paper]\]\[[https://arxiv.org/pdf/2206.01898.pdf Arxiv]\]\[[https://github.com/Daizy97/SaliencyAttack Code]\]
 . Rui He, *Shengcai Liu*\*, Shan He, and Ke Tang. Multi-Domain Active Learning: Literature Review and Comparative Study. /IEEE Transactions on Emerging Topics in Computational Intelligence/, 2023, 7(3): 791-804. \[[https://ieeexplore.ieee.org/document/9942709 Paper]\]\[[https://arxiv.org/pdf/2106.13516.pdf Arxiv]\]
