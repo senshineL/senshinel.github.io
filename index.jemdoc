@@ -2,44 +2,49 @@
 ==Shengcai Liu（刘晟材）
 
 ~~~
-{}{img_left}{photos/bio_1.jpg}{alt text}{110}{146}
-# Research Assistant Professor,\n [https://cse.sustech.edu.cn/ Department of Computer Science and Engineering (CSE)], \n
-# [https://sustech.edu.cn/ Southern University of Science and Technology (SUSTech)] \n
-# Office: Room 646B, South Tower, College of Engineering \n
-# Address: 1088 Xueyuan Avenue, Shenzhen, Guangdong, China 518055 \n
-Senior Scientist, [https://www.a-star.edu.sg/ihpc Centre for Frontier AI Research (CFAR)]\n [https://www.a-star.edu.sg/ Agency for Science, Technology and Research (A*STAR)\n]
-Address: 1 Fusionopolis Way, \#16-16, Connexis North Tower, Singapore 138632\n
-Email: liusccc \[AT\] gmail \[DOT\] com
+{}{img_left}{photos/bio_1.jpg}{alt text}{165}{225}
+
+副研究员（助理教授），博导\n
+Tenure-track Assistant Professor\n
+Department of Computer Science and Engineering\n
+Southern University of Science and Technology\n
+
+Office: Room 311, South Tower, College of Engineering\n
+Address: No. 1088 Xueyuan Avenue, Shenzhen, Guangdong, China 518055\n
+Email: liusc3 \[AT\] sustech \[DOT\] edu \[DOT\] cn, liusccc \[AT\] gmail \[DOT\] com
+
 ~~~
 
-== Short Biography
-I received my B.Sc. and Ph.D. degrees in the School of Computer Science and Technology from the University of Science and Technology of China (USTC) in 2014 and 2020, respectively, under the supervision of [https://www.cs.bham.ac.uk/~xin/ Prof. Xin Yao] and [http://faculty.sustech.edu.cn/tangk3/en/ Prof. Ke Tang].
-
-From Jan 2021 to Jan 2023, I was a Research Assistant Professor at the [https://cse.sustech.edu.cn/ Department of Computer Science and Engineering (CSE)], [https://sustech.edu.cn/ Southern University of Science and Technology (SUSTech)].
-I am also a member of the Nature Inspired Computation and Applications Laboratory ([http://www.nical.ai/ NICAL]) led by [https://www.cs.bham.ac.uk/~xin/ Prof. Xin Yao] and [http://faculty.sustech.edu.cn/tangk3/en/ Prof. Ke Tang].
-
-From Jan 2023 to May 2023, I was a Visting Professor at the Institute of High Performance Computing (IHPC), A*STAR, Singapore. Currently I am a research scientist at CFAR. I am in collaboration with [https://personal.ntu.edu.sg/asysong/home.html Prof. Yew-Soon Ong] from Nanyang Technological University (NTU).
+# == Short Biography
+I received my B.Sc. and Ph.D. degrees in the School of Computer Science and Technology from USTC in 2014 and 2020, respectively, advised by [https://www.cs.bham.ac.uk/~xin/ Prof. Xin Yao] and [http://faculty.sustech.edu.cn/tangk3/en/ Prof. Ke Tang].
+From Jan 2021 to Jan 2023, I was a Research Assistant Professor at the CSE Department of SUSTech.
+From Jan 2023 to May 2023, I was a Visiting Professor, and later a senior scientist, at CFAR, A*STAR, Singapore, in collaboration with [https://personal.ntu.edu.sg/asysong/home.html Prof. Yew-Soon Ong] from NTU.
+I am also a member of the Nature Inspired Computation and Applications Laboratory ([http://www.nical.ai/ NICAL]) led by Prof. Xin Yao and Prof. Ke Tang.
 
 == Research Interest
-Ultimately, I am obsessed with the theoretical foundations and practical approaches for *the fully-automated design of general-purpose optimization algorithms*.
+Ultimately, I am obsessed with the theoretical foundations and practical approaches for *the fully-automated design of optimization algorithms and learning models*.
 
-Now I am working on:
-- Algorithm design by Evolutionary Computation, i.e., Algorithm Evolution
-- Deep learning to algorithm design, i.e., Learn to Optimize
-- Applications of these methods to practical combinatorial optimization problems such as evaluation of the robustness/safety of AI models (such as large language models), complex vehicle routing, influence blocking maximization, and 5G network end-to-end configuration
+Now I am interested in:
+- Theoretical foundations of Learning to Optimize (L2O)
+- Learning scalable optimizers
+- Learning general-purpose optimizers
+- Evolutionary Large Learning Models
+# - Applications of these methods to practical combinatorial optimization problems such as evaluation of the robustness/safety of AI models (such as large language models), complex vehicle routing, influence blocking maximization, and 5G network end-to-end configuration
 # - Highly-effective automatically-designed algorithms for adversarial attack and robustness
 # - Efficient and effective algorithms for black/grey-box combinatorial optimization problems arising in real-world applications, e.g., adversarial attack
 
-== Recent News
-- Apr 9, 2024: Our work "Large Language Models can be Guided to Evade AI-Generated Text Detection" has been accepted by TMLR
-- Apr 8, 2024: Our work "Chance-Constrained Multiple-Choice Knapsack Problem: Model, Algorithms, and Applications" has been accepted by IEEE TCYB
-- Mar 25, 2024: Our work "Less is More: Understanding Word-level Textual Adversarial Attack via n-gram Frequency Descend" has been accepted by IEEE CAI 2024
-- Mar 16, 2024: Our work "Large Language Models as Evolutionary Optimizers" has been accepted by IEEE CEC 2024
-- Feb 29, 2024: Our work "Effective and Imperceptible Adversarial Textual Attack via Multi-objectivization" has been accepted by ACM TELO
-- Nov 23, 2023: Our work "Datastore Distillation for Nearest Neighbor Machine Translation" has been accepted by IEEE TASL
-- Aug 18, 2023: I experienced a wonderful week attending the [https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/23332 Dagstuhl Seminar] held in a secluded village in Germany.
-- Aug 6, 2023: Our work "A Population Cooperation Based Particle Swarm Optimization Algorithm for Large-Scale Multi-Objective Optimization" has been accepted by SWEVO
-- Jul 16, 2023: Our work "Multi-Domain Learning From Insufficient Annotations" has been accepted by ECAI'2023
+\<span style=\"color\: red\;\"\>I am looking for self-motivated Master students, Ph.D. students, and Postdocs, working in the above research directions. If you are interested, please feel free to contact me via emails.\</span>
+
+# == Recent News
+# - Apr 9, 2024: Our work "Large Language Models can be Guided to Evade AI-Generated Text Detection" has been accepted by TMLR
+# - Apr 8, 2024: Our work "Chance-Constrained Multiple-Choice Knapsack Problem: Model, Algorithms, and Applications" has been accepted by IEEE TCYB
+# - Mar 25, 2024: Our work "Less is More: Understanding Word-level Textual Adversarial Attack via n-gram Frequency Descend" has been accepted by IEEE CAI 2024
+# - Mar 16, 2024: Our work "Large Language Models as Evolutionary Optimizers" has been accepted by IEEE CEC 2024
+# - Feb 29, 2024: Our work "Effective and Imperceptible Adversarial Textual Attack via Multi-objectivization" has been accepted by ACM TELO
+# - Nov 23, 2023: Our work "Datastore Distillation for Nearest Neighbor Machine Translation" has been accepted by IEEE TASL
+# - Aug 18, 2023: I experienced a wonderful week attending the [https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/23332 Dagstuhl Seminar] held in a secluded village in Germany.
+# - Aug 6, 2023: Our work "A Population Cooperation Based Particle Swarm Optimization Algorithm for Large-Scale Multi-Objective Optimization" has been accepted by SWEVO
+# - Jul 16, 2023: Our work "Multi-Domain Learning From Insufficient Annotations" has been accepted by ECAI'2023
 # - Apr 9, 2023: Our work "How Good Is Neural Combinatorial Optimization? A Systematic Evaluation on the Traveling Salesman Problem" has been accepted by IEEE CIM
 # - Jan 10, 2023: Our work "Saliency Attack: Towards Imperceptible Black-box Adversarial Attack" has been accepted by ACM TIST
 # - Nov 19, 2022: Our work "Reliable Robustness Evaluation via Automatically Constructed Attack Ensembles" has been accepted by AAAI'2023
@@ -82,28 +87,36 @@ Cooperative Coevolution. In: /Proceedings of the 13th International Conference o
 . *Shengcai Liu*, Ke Tang, and Xin Yao. Automatic Construction of Parallel Portfolios via Explicit Instance Grouping. In: /Proceedings of The 33rd AAAI Conference on Artificial Intelligence (AAAI'2019)/, Honululu, HI, 2019, 1560-1567. \[[https://ojs.aaai.org/index.php/AAAI/article/view/3970 Paper]\]
 . *Shengcai Liu*, Yufan Wei, Ke Tang, A.K. Qin, and Xin Yao. Qos-aware Long-Term Based Service Composition in Cloud Computing. In: /Proceedings of The 14th IEEE Congress on Evolutionary Computation (CEC'2015)/, Sendai, Japan, 2015, 3362-3369. \[[https://ieeexplore.ieee.org/abstract/document/7257311 Paper]\]
 
+== Grants
+- 项目负责人, "高可靠组合优化求解器的自动构建关键方法", 华为-南方科技大学计算机系人工
+智能RAMS技术创新实验室长期合作框架协议项目, 05/2021 - 05/2022, CNY 400,000.
+
 == Invited Talks
-. Learn to Optimize @ The 2022 IEEE World Congress on Computational Intelligence (WCCI'2022). Jul 18, 2022. \[[http://senshineL.github.io/files/L2O_tutorial.pdf Slides]\]
-. Co-Evolved Parallel Algorithm Portfolios @ The 7th Workshop on Evolutionary Computation and Learning (ECOLE'2021). May 15, 2021.
-. Algorithm Portfolios for Beginners @ Magic-Data (数据魔术师). Apr 6, 2021. (online)
+- 通用优化探索之路: 从并行算法组自动构造到优化基座模型 @ NICE Seminar. Aug 11, 2024.
+- Learn to Optimize @ The 2022 IEEE World Congress on Computational Intelligence (WCCI'2022). Jul 18, 2022. \[[http://senshineL.github.io/files/L2O_tutorial.pdf Slides]\]
+- Co-Evolved Parallel Algorithm Portfolios @ The 7th Workshop on Evolutionary Computation and Learning (ECOLE'2021). May 15, 2021.
+- Algorithm Portfolios for Beginners @ Magic-Data (数据魔术师). Apr 6, 2021. (online)
 
-== Code & Datasets
+== Teaching
+- CS110-Java Programming Java程序设计基础 (for undergraduate students, 2024Fall)
 
-[https://github.com/senshineL/VRPenstein VRPenstein]: A highly-flexible and high-performance meta-heuristic with considerable large configuration space for the vehicle routing problems (VRP).
+# == Code & Datasets
 
-[https://github.com/senshineL/GA-EAX-restart GA-EAX-restart]: A restart version of the powerful Genetic Algorithm with Edge Assembly Crossover (GA-EAX by Nagata & Kobayashi). In our massive experiments, GA-EAX-restart could consistently outperform GA-EAX and LKH 2.0.9, the two state-of-the-art inexact solvers for TSP.
+# [https://github.com/senshineL/VRPenstein VRPenstein]: A highly-flexible and high-performance meta-heuristic with considerable large configuration space for the vehicle routing problems (VRP).
 
-== Community Services
-One of the editors of [http://ecole.asia/news/ All About Evolutionary Optimization (AAEO)] (i.e., ECOLE weekly).
+# [https://github.com/senshineL/GA-EAX-restart GA-EAX-restart]: A restart version of the powerful Genetic Algorithm with Edge Assembly Crossover (GA-EAX by Nagata & Kobayashi). In our massive experiments, GA-EAX-restart could consistently outperform GA-EAX and LKH 2.0.9, the two state-of-the-art inexact solvers for TSP.
 
-Journal reviewers: IEEE Transactions on Pattern Analysis and Machine Intelligence, IEEE Transactions on Evolutionary Computation, IEEE Transactions on Neural Networks and Learning Systems,
-IEEE Transactions on Cybernetics, IEEE Transactions on Emerging Topics in Computational Intelligence, IEEE Computational Intelligence Magazine,
-ACM Transactions on Asian and Low-Resource Language Information Processing,
-Journal of Artificial Intelligence,
-Frontiers of Computer Science, Information Sciences, Memetic Computing, Natural Computing, Swarm and Evolutionary Optimization.
+# == Community Services
+# One of the editors of [http://ecole.asia/news/ All About Evolutionary Optimization (AAEO)] (i.e., ECOLE weekly).
 
-PC members: AAAI 2019\/2020\/2021\/2022\/2023, IJCAI 2020\/2021\/2022\/2023, ICML 2021, NeurIPS 2021
+# Journal reviewers: IEEE Transactions on Pattern Analysis and Machine Intelligence, IEEE Transactions on Evolutionary Computation, IEEE Transactions on Neural Networks and Learning Systems,
+# IEEE Transactions on Cybernetics, IEEE Transactions on Emerging Topics in Computational Intelligence, IEEE Computational Intelligence Magazine,
+# ACM Transactions on Asian and Low-Resource Language Information Processing,
+# Journal of Artificial Intelligence,
+# Frontiers of Computer Science, Information Sciences, Memetic Computing, Natural Computing, Swarm and Evolutionary Optimization.
 
-Member: IEEE, AAAI 
+# PC members: AAAI 2019\/2020\/2021\/2022\/2023, IJCAI 2020\/2021\/2022\/2023, ICML 2021, NeurIPS 2021
+
+# Member: IEEE, AAAI 
 
 ## Students
