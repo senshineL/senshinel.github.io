@@ -18,7 +18,7 @@ Email: liusc3 \[AT\] sustech \[DOT\] edu \[DOT\] cn, liusccc \[AT\] gmail \[DOT\
 # == Short Biography
 I received my B.Sc. and Ph.D. degrees in the School of Computer Science and Technology from USTC in 2014 and 2020, respectively, advised by [https://www.cs.bham.ac.uk/~xin/ Prof. Xin Yao] and [http://faculty.sustech.edu.cn/tangk3/en/ Prof. Ke Tang].
 From Jan 2021 to Jan 2023, I was a Research Assistant Professor at the CSE Department of SUSTech.
-From Jan 2023 to May 2023, I was a Visiting Professor, and later a senior scientist, at CFAR, A*STAR, Singapore, in collaboration with [https://personal.ntu.edu.sg/asysong/home.html Prof. Yew-Soon Ong] from NTU.
+From Jan 2023 to May 2024, I was a Visiting Professor, and later a senior scientist, at CFAR, A*STAR, Singapore, in collaboration with [https://personal.ntu.edu.sg/asysong/home.html Prof. Yew-Soon Ong] from NTU.
 I am also a member of the Nature Inspired Computation and Applications Laboratory ([http://www.nical.ai/ NICAL]) led by Prof. Xin Yao and Prof. Ke Tang.
 
 == Research Interest
@@ -89,7 +89,7 @@ Cooperative Coevolution. In: /Proceedings of the 13th International Conference o
 
 == Grants
 - 项目负责人, "高可靠组合优化求解器的自动构建关键方法", 华为-南方科技大学计算机系人工
-智能RAMS技术创新实验室长期合作框架协议项目, 05/2021 - 05/2022, CNY 400,000.
+智能RAMS技术创新实验室长期合作框架协议项目, 05\/2021 - 05\/2022, CNY 400,000.
 
 == Invited Talks
 - 通用优化探索之路: 从并行算法组自动构造到优化基座模型 @ NICE Seminar. Aug 11, 2024.
@@ -98,7 +98,7 @@ Cooperative Coevolution. In: /Proceedings of the 13th International Conference o
 - Algorithm Portfolios for Beginners @ Magic-Data (数据魔术师). Apr 6, 2021. (online)
 
 == Teaching
-- CS110-Java Programming Java程序设计基础 (for undergraduate students, 2024Fall)
+- CS110-Java程序设计基础 (for undergraduate students, 2024 Fall)
 
 # == Code & Datasets
 
