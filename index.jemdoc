@@ -22,18 +22,16 @@ From Jan 2023 to May 2024, I was a Visiting Professor, and later a senior scient
 I am also a member of the Nature Inspired Computation and Applications Laboratory ([http://www.nical.ai/ NICAL]) led by Prof. Xin Yao and Prof. Ke Tang.
 
 == Research Interest
-Ultimately, I am obsessed with the theoretical foundations and practical approaches for *the fully-automated design of optimization algorithms and learning models*.
+Ultimately, I am obsessed with the theoretical foundations and practical approaches for *the fully-automated design of optimizers that can generalize*.
 
 Now I am interested in:
-- Theoretical foundations of Learning to Optimize (L2O)
-- Learning scalable optimizers
-- Learning general-purpose optimizers
-- Evolutionary Large Learning Models
-# - Applications of these methods to practical combinatorial optimization problems such as evaluation of the robustness/safety of AI models (such as large language models), complex vehicle routing, influence blocking maximization, and 5G network end-to-end configuration
+- Learning easy-to-use, general-purpose, scalable optimizers for discrete optimization problems
+- Learning optimizers for applications with huge impact, e.g., industry software and web applications
+# these methods to practical combinatorial optimization problems such as evaluation of the robustness/safety of AI models (such as large language models), complex vehicle routing, influence blocking maximization, and 5G network end-to-end configuration
 # - Highly-effective automatically-designed algorithms for adversarial attack and robustness
 # - Efficient and effective algorithms for black/grey-box combinatorial optimization problems arising in real-world applications, e.g., adversarial attack
 
-\<span style=\"color\: red\;\"\>I am looking for self-motivated Master students, Ph.D. students, and Postdocs, working in the above research directions. If you are interested, please feel free to contact me via emails.\</span>
+\<span style=\"color\: red\;\"\>I am looking for self-motivated Master students, Ph.D. students, Postdocs, and research assistants (RA), working in the above research directions. If you are interested, please feel free to contact me via emails.\</span>
 
 # == Recent News
 # - Apr 9, 2024: Our work "Large Language Models can be Guided to Evade AI-Generated Text Detection" has been accepted by TMLR
@@ -78,6 +76,8 @@ First/corresponding-authored (\*) works listed; see [https://scholar.google.com/
 . *Shengcai Liu*, Ke Tang, and Xin Yao. Generative Adversarial Construction of Parallel Portfolios. /IEEE Transactions on Cybernetics/, 2022, 52(2): 784-795. \[[https://ieeexplore.ieee.org/abstract/document/9082022 Paper]\]
 
 === Conference Papers
+. Jiahao Wu, Ning Lu, Zeiyu Dai, Wenqi Fan, *Shengcai Liu*\*, Qing Li, Ke Tang. Backdoor Graph Condensation. In: /Proceedings of The 40th IEEE International Conference on Data Engineering (ICDE'2024)/, HongKong, China, 2025. \[[https://arxiv.org/pdf/2407.11025 Arxiv]\]
+. Jiahao Wu, Qujiong Liu, Hengchang Hu, Wenqi Fan, *Shengcai Liu*\*, Qing Li, Xiao-Ming Wu, Ke Tang. Leveraging ChatGPT to Empower Training-free Dataset Condensation for Content based Recommendation. In: /Companion Proceedings of the ACM on Web Conference 2025 (WWW'2025)/, Sydney, Australia, 2025. \[[https://arxiv.org/pdf/2310.09874 Arxiv]\]
 . Ning Lu, *Shengcai Liu*\*, Zhirui Zhang, Qi Wang, Haifeng Liu, and Ke Tang. Less is More: Understanding Word-level Textual Adversarial Attack via n-gram Frequency Descend. In: /Proceedings of The 2024 IEEE Conference on Artificial Intelligence (CAI'2024)/, Singapore, Singapore, 2024, 823-830. \[[https://ieeexplore.ieee.org/abstract/document/10605391 Paper]\] \[[https://arxiv.org/pdf/2302.02568.pdf Arxiv]\]
 . *Shengcai Liu*, Caishun Chen, Xinghua Qu, Ke Tang, and Yew-Soon Ong. Large Language Models as Evolutionary Optimizers. In: /Proceedings of The 2024 IEEE Congress on Evolutionary Computation (CEC'2024)/, Yokohama, Japan, 2024, 1-8. \[[https://ieeexplore.ieee.org/abstract/document/10611913 Paper]\] \[[https://arxiv.org/pdf/2310.19046.pdf Arxiv]\]
 . Rui He, *Shengcai Liu*\*, Jiahao Wu, Shan He, and Ke Tang. Multi-Domain Learning From Insufficient Annotations. In: /Proceedings of The 26th European Conference on Artificial Intelligence (ECAI'2023)/, Kraków, Poland, 2023, 1028-1035. \[[https://ebooks.iospress.nl/doi/10.3233/FAIA230375 Paper]\]\[[https://arxiv.org/pdf/2305.02757.pdf Arxiv]\]
