@@ -22,11 +22,12 @@ From Jan 2023 to May 2024, I was a Visiting Professor, and later a senior scient
 I am also a member of the Nature Inspired Computation and Applications Laboratory ([http://www.nical.ai/ NICAL]) led by Prof. Xin Yao and Prof. Ke Tang.
 
 == Research Interest
-Ultimately, I am obsessed with the theoretical foundations and practical approaches for *the fully-automated design of optimizers that can generalize*.
+Ultimately, I am obsessed with *the fully-automated design of optimizers that can generalize*.
 
 Now I am interested in:
 - Learning easy-to-use, general-purpose, scalable optimizers for discrete optimization problems
 - Learning optimizers for applications with huge impact, e.g., industry software and web applications
+- Code generation with LLMs for anything huge (not just optimization!!!)
 # these methods to practical combinatorial optimization problems such as evaluation of the robustness/safety of AI models (such as large language models), complex vehicle routing, influence blocking maximization, and 5G network end-to-end configuration
 # - Highly-effective automatically-designed algorithms for adversarial attack and robustness
 # - Efficient and effective algorithms for black/grey-box combinatorial optimization problems arising in real-world applications, e.g., adversarial attack
