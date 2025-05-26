@@ -54,6 +54,11 @@ Now I am interested in:
 First/corresponding-authored (indicated by "\*") works listed; see [https://scholar.google.com/citations?user=tV0nV3oAAAAJ&hl=en Google Scholar] for complete list.
 
 === Preprints
+. Zhangying Feng, Qianglong Chen, Ning Lu, Yongqian Li, Siqi Cheng, Shuangmu Peng, Duyu Tang, Shengcai Liu, Zhirui Zhang. /Arxiv preprint arXiv:2505.11227/. \[[https://arxiv.org/abs/2505.11227.pdf Arxiv]\]
+. Zeyu Dai, Shengcai Liu, Rui He, Jiahao Wu, Ning Lu, Wenqi Fan, Qing Li, Fellow, IEEE, and Ke
+Tang. SemDiff: Generating Natural Unrestricted
+Adversarial Examples via Semantic Attributes
+Optimization in Diffusion Models. /Arxiv preprint arXiv:2504.11923/. \[[https://arxiv.org/abs/2504.11923.pdf Arxiv]\]
 . Rui Xu, Xing Fan, Shengcai Liu, Wenjie Chen, Ke Tang. Memetic Search for Green Vehicle Routing Problem with Private Capacitated Refueling Stations. /Arxiv preprint arXiv:2504.04527/. \[[https://arxiv.org/pdf//2504.04527.pdf Arxiv]\]
 . Zhiyuan Wang, Shengcai Liu, Peng Yang, and Ke Tang. Domain-Agnostic Co-Evolution of Generalizable Parallel Algorithm Portfolios. /Arxiv preprint arXiv:2501.02906/. \[[https://arxiv.org/pdf//2501.02906.pdf Arxiv]\]
 . Shengcai Liu, Zhiyuan Wang, Yew-Soon Ong, Xin Yao, and Ke Tang. Learning Mixture-of-Experts for General-Purpose Black-Box Discrete Optimization. /Arxiv preprint arXiv:2405.18884/. \[[https://arxiv.org/pdf//2405.18884.pdf Arxiv]\]
@@ -77,7 +82,7 @@ First/corresponding-authored (indicated by "\*") works listed; see [https://scho
 . *Shengcai Liu*, Ke Tang, and Xin Yao. Generative Adversarial Construction of Parallel Portfolios. /IEEE Transactions on Cybernetics/, 2022, 52(2): 784-795. \[[https://ieeexplore.ieee.org/abstract/document/9082022 Paper]\]
 
 === Conference Papers
-. Ning Lu, *Shengcai Liu*\*, Jiahao Wu, Weiyu Chen, Zhirui Zhang, Yew-Soon Ong, Qi Wang, Ke Tang. Safe Delta: Consistently Preserving Safety when Fine-Tuning LLMs on Diverse Datasets. In: /Proceedings of the 42nd International Conference on Machine Learning (ICML'2025)/, Vancouver, Canada, 2025. (To appear)
+. Ning Lu, *Shengcai Liu*\*, Jiahao Wu, Weiyu Chen, Zhirui Zhang, Yew-Soon Ong, Qi Wang, Ke Tang. Safe Delta: Consistently Preserving Safety when Fine-Tuning LLMs on Diverse Datasets. In: /Proceedings of the 42nd International Conference on Machine Learning (ICML'2025)/, Vancouver, Canada, 2025. \[[https://arxiv.org/abs/2505.12038 Arxiv]\]
 . Jiahao Wu, Ning Lu, Zeiyu Dai, Wenqi Fan, *Shengcai Liu*\*, Qing Li, Ke Tang. Backdoor Graph Condensation. In: /Proceedings of The 40th IEEE International Conference on Data Engineering (ICDE'2025)/, HongKong, China, 2025. \[[https://arxiv.org/pdf/2407.11025 Arxiv]\]
 . Jiahao Wu, Qujiong Liu, Hengchang Hu, Wenqi Fan, *Shengcai Liu*\*, Qing Li, Xiao-Ming Wu, Ke Tang. Leveraging ChatGPT to Empower Training-free Dataset Condensation for Content based Recommendation. In: /Companion Proceedings of the ACM on Web Conference 2025 (WWW'2025)/, Sydney, Australia, 2025. \[[https://arxiv.org/pdf/2310.09874 Arxiv]\]
 . Ning Lu, *Shengcai Liu*\*, Zhirui Zhang, Qi Wang, Haifeng Liu, and Ke Tang. Less is More: Understanding Word-level Textual Adversarial Attack via n-gram Frequency Descend. In: /Proceedings of The 2024 IEEE Conference on Artificial Intelligence (CAI'2024)/, Singapore, Singapore, 2024, 823-830. \[[https://ieeexplore.ieee.org/abstract/document/10605391 Paper]\] \[[https://arxiv.org/pdf/2302.02568.pdf Arxiv]\]
