@@ -54,8 +54,9 @@ Now I am interested in:
 First/corresponding-authored (indicated by "\*") works listed; see [https://scholar.google.com/citations?user=tV0nV3oAAAAJ&hl=en Google Scholar] for complete list.
 
 === Preprints
+. Shaofeng Zhang, Shengcai Liu, Ning Lu, Jiahao Wu, Ji Liu, Yew-Soon Ong, Ke Tang. LLM-Driven Instance-Specific Heuristic Generation and Selection. /arXiv preprint arXiv:2506.00490/. \[[https://arxiv.org/abs/2505.11227.pdf Arxiv]\]
 . Zhangying Feng, Qianglong Chen, Ning Lu, Yongqian Li, Siqi Cheng, Shuangmu Peng, Duyu Tang, Shengcai Liu, Zhirui Zhang. Is PRM Necessary? Problem-Solving RL Implicitly Induces PRM Capability in LLMs. /Arxiv preprint arXiv:2505.11227/. \[[https://arxiv.org/abs/2505.11227.pdf Arxiv]\]
-. Zeyu Dai, Shengcai Liu, Rui He, Jiahao Wu, Ning Lu, Wenqi Fan, Qing Li, Fellow, IEEE, and Ke Tang. SemDiff: Generating Natural Unrestricted Adversarial Examples via Semantic Attributes Optimization in Diffusion Models. /Arxiv preprint arXiv:2504.11923/. \[[https://arxiv.org/abs/2504.11923.pdf Arxiv]\]
+. Zeyu Dai, Shengcai Liu, Rui He, Jiahao Wu, Ning Lu, Wenqi Fan, Qing Li, and Ke Tang. SemDiff: Generating Natural Unrestricted Adversarial Examples via Semantic Attributes Optimization in Diffusion Models. /Arxiv preprint arXiv:2504.11923/. \[[https://arxiv.org/abs/2504.11923.pdf Arxiv]\]
 . Rui Xu, Xing Fan, Shengcai Liu, Wenjie Chen, Ke Tang. Memetic Search for Green Vehicle Routing Problem with Private Capacitated Refueling Stations. /Arxiv preprint arXiv:2504.04527/. \[[https://arxiv.org/pdf//2504.04527.pdf Arxiv]\]
 . Zhiyuan Wang, Shengcai Liu, Peng Yang, and Ke Tang. Domain-Agnostic Co-Evolution of Generalizable Parallel Algorithm Portfolios. /Arxiv preprint arXiv:2501.02906/. \[[https://arxiv.org/pdf//2501.02906.pdf Arxiv]\]
 . Shengcai Liu, Zhiyuan Wang, Yew-Soon Ong, Xin Yao, and Ke Tang. Learning Mixture-of-Experts for General-Purpose Black-Box Discrete Optimization. /Arxiv preprint arXiv:2405.18884/. \[[https://arxiv.org/pdf//2405.18884.pdf Arxiv]\]
@@ -98,10 +99,12 @@ Cooperative Coevolution. In: /Proceedings of the 13th International Conference o
 智能RAMS技术创新实验室长期合作框架协议项目, 05\/2021 - 05\/2022, CNY 400,000.
 
 == Invited Talks
-- 通用优化探索之路: 从并行算法组自动构造到优化基座模型 @ NICE Seminar. Aug 11, 2024.
-- Learn to Optimize @ The 2022 IEEE World Congress on Computational Intelligence (WCCI'2022). Jul 18, 2022. \[[http://senshineL.github.io/files/L2O_tutorial.pdf Slides]\]
-- Co-Evolved Parallel Algorithm Portfolios @ The 7th Workshop on Evolutionary Computation and Learning (ECOLE'2021). May 15, 2021.
-- Algorithm Portfolios for Beginners @ Magic-Data (数据魔术师). Apr 6, 2021. (online)
+- "Some Preliminary Attempts on LLM-Driven Optimization and Optimization for LLMs" @ 第4届智能决策论坛, 2025年6月15日, 南京, 中国.
+- "迈向通用离散优化智能体" @ 第20次南澳科学会议, 2025年4月27日, 汕头, 中国.
+- "Large Language Models as General-Purpose Evolutionary Optimizers" @ 2024 Workshop on Learning-to-Optimize Paradigms in the Era of LLMs, 2024年12月3日, 深圳华为, 中国.
+- "How Good is Neural Combinatorial Optimization?" @ Dagstuhl Seminar "Synergizing Theory and Practice of Automated Algorithm Design for Optimization". Aug 17, 2023. Dagstuhl, Germany.
+- "Learn to Optimize" @ The 2022 IEEE World Congress on Computational Intelligence (WCCI'2022). Jul 18, 2022. \[[http://senshineL.github.io/files/L2O_tutorial.pdf Slides]\], Online.
+- "Co-Evolved Parallel Algorithm Portfolios" @ The 7th Workshop on Evolutionary Computation and Learning (ECOLE'2021). May 15, 2021. Wuhan, China.
 
 == Teaching
 - CSE5025-组合优化 (for graduate students, 2025 Spring)
