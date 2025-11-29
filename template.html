@@ -1,0 +1,242 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{{ profile.name_en }} @ SUSTech</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            width: 100%;
+            background: #fff;
+            font-size: 90%;
+            font-family: 'Helvetical', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        p {
+            padding-left: 20px;
+            clear: left;
+        }
+
+        h2 {
+            padding-top: 30px;
+        }
+
+        /* Navigation Bar CSS - Updated for Blue Links */
+        #nav_bar {
+            clear: left;
+            float: left;
+            padding: 0;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            width: 100%;
+            overflow: hidden;
+            font-size: 130%;
+            font-family: Georgia, Serif;
+        }
+
+        #nav_bar ul {
+            float: left;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: relative;
+            left: 50%;
+            text-align: center;
+        }
+
+        #nav_bar ul li {
+            display: block;
+            float: left;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            right: 50%;
+        }
+
+        #nav_bar ul li a {
+            display: block;
+            float: left;
+            margin: 1px 1px 0 1px;
+            padding: 6px 10px 6px 6px;
+            background: #fff;
+            text-decoration: none;
+            color: #0066cc;
+            /* Blue links */
+            font-size: 90%;
+            font-family: sans-serif
+        }
+
+        #nav_bar ul li a:hover {
+            background: #eee;
+            color: #003366;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        blockquote {
+            margin: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table width="1087" height="300" border="0">
+        <tbody>
+            <tr>
+                <td width="190" height="254" align="left">
+                    <img src="{{ profile.photo_path }}" hspace="17" height="205" alt="Photo">
+                </td>
+                <td width="500" height="274">
+                    <h1>{{ profile.name_en }} ({{ profile.name_cn }})</h1>
+                    <p>{{ profile.title_cn }}<br>
+                        {{ profile.title_en }}<br>
+                        {% for aff in profile.affiliations %}
+                        {{ aff }}<br>
+                        {% endfor %}
+                    </p>
+                    <p>
+                        Office: {{ profile.office }}<br>
+                        Address: {{ profile.address }}<br>
+                        Email: {{ profile.email }}
+                    </p>
+                </td>
+                <td width="350" align="center" style="vertical-align: middle; height: 200px;">
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 40px; height: 100%;">
+                        <img src="{{ profile.logo1_path }}" style="height: 160px; width: auto; max-width: 350px;">
+                        <img src="{{ profile.logo2_path }}" style="height: 120px; width: auto; max-width: 230px;">
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Short Biography</h3>
+    <ul style="padding-inline-start:20px;padding-left:20px;padding-right:20px">
+        <p>{{ biography.en }}</p>
+    </ul>
+
+    <h3>个人简介</h3>
+    <ul style="padding-inline-start:20px;padding-left:20px;padding-right:20px">
+        <p>{{ biography.cn }}</p>
+    </ul>
+
+    <div id="nav_bar">
+        <ul>
+            {% for section in sections %}
+            <li {% if loop.first %}class="first" {% endif %}>
+                <a href="#{{ section.id }}">{{ section.nav_label }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <br><br>
+
+    {% for section in sections %}
+
+    <h3 id="{{ section.id }}" {% if section.type=='publications' %}style="display: inline;" {% endif %}>
+        {{ section.header_title }}
+    </h3>
+
+    {% if section.type == 'interests' %}
+    <blockquote>
+        <p style="padding:0px;text-align: left">{{ section.intro }}</p>
+        <ul style="padding-inline-start:20px;padding-left:20px">
+            {% for item in section.entries %}
+            <li style="margin-bottom:10px">{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </blockquote>
+    {% if section.recruitment and section.recruitment.enabled %}
+    <ul style="padding-inline-start:20px;padding-left:20px; color: #FF0000">
+        <p>{{ section.recruitment.content }}</p>
+    </ul>
+    {% endif %}
+
+    {% elif section.type == 'list_detailed' %}
+    <blockquote>
+        <ul style="padding-inline-start:20px;padding-left:20px">
+            {% for item in section.entries %}
+            <li style="margin-bottom:10px">
+                {{ item.text }},
+                {% if item.note %}<strong>{{ item.note }}</strong>,{% endif %}
+                {% if item.year %}{{ item.year }},{% endif %}
+                {% if item.role %}<strong>{{ item.role }}</strong>{% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </blockquote>
+
+    {% elif section.type == 'grouped_list' %}
+    {% for group in section.groups %}
+    <p><strong>{{ group.title }}</strong></p>
+    <blockquote>
+        <ul style="padding-inline-start:20px;padding-left:20px">
+            {% for item in group.entries %}
+            <li style="margin-bottom:10px">{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </blockquote>
+    {% endfor %}
+
+    {% elif section.type == 'publications' %}
+    {% for group in section.groups %}
+    <p><strong>{{ group.title }}</strong> {{ group.note }}</p>
+    <ol>
+        {% for paper in group.entries %}
+        <li>
+            {{ paper.authors }}. <strong>{{ paper.title }}</strong>. <br>
+            {{ paper.venue }}<br><br>
+        </li>
+        {% endfor %}
+    </ol>
+    {% endfor %}
+
+    {% elif section.type == 'activities' %}
+    <ul>
+        {% for item in section.entries %}
+        <li><strong>{{ item.category }}</strong></li>
+        <blockquote style="margin:0px">
+            <p>
+                {% for line in item.content %}
+                {{ line }}<br>
+                {% endfor %}
+            </p>
+        </blockquote>
+        {% endfor %}
+    </ul>
+
+    {% elif section.type == 'simple_list_grouped' %}
+    {% for group in section.groups %}
+    <p><strong>{{ group.title }}</strong></p>
+    <ul>
+        {% for item in group.entries %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+
+    {% elif section.type == 'simple_list' %}
+    <ul>
+        {% for item in section.entries %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% endfor %}
+
+    <br><br>
+</body>
+
+</html>
