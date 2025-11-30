@@ -1,6 +1,7 @@
 import yaml
 from jinja2 import Environment, FileSystemLoader
 import os
+import datetime # 1. 引入时间模块
 
 def build_site():
     # 1. 设置文件路径
@@ -21,7 +22,13 @@ def build_site():
         print(f"Error parsing YAML: {exc}")
         return
 
-    # 3. 设置 Jinja2 环境
+    # 3. 获取当前编译日期 (新增步骤)
+    # 格式为 YYYY-MM-DD，例如 2025-05-20
+    current_date = datetime.datetime.now().strftime("%Y-%m-%d")
+    data['build_date'] = current_date
+    print(f"Build date set to: {current_date}")
+
+    # 4. 设置 Jinja2 环境
     file_loader = FileSystemLoader('.')
     env = Environment(loader=file_loader)
     
@@ -33,14 +40,14 @@ def build_site():
 
     print("Rendering HTML...")
     
-    # 4. 渲染模板
+    # 5. 渲染模板
     try:
         output_html = template.render(data)
     except Exception as e:
         print(f"Error rendering template: {e}")
         return
 
-    # 5. 写入最终的 HTML 文件
+    # 6. 写入最终的 HTML 文件
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(output_html)
 

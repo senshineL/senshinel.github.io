@@ -238,20 +238,25 @@
 
     <br><br>
 
+    <!-- Footer -->
     <div
         style="text-align: center; font-size: 80%; color: #666; border-top: 1px solid #ddd; padding-top: 20px; margin-bottom: 20px;">
-    
-        {% if footer.show_visitor_count %}
-        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    
-        <span id="busuanzi_container_site_pv" style="display:none">
-            {{ footer.text_en }}: <span id="busuanzi_value_site_pv" style="font-weight: bold; color: #000;"></span>
-        </span>
-        {% endif %}
-    
+
         <p style="margin-top: 5px;">
-            &copy; {{ profile.name_en }}. Last updated:
-            <script>document.write(new Date().getFullYear())</script>.
+            <!-- 1. 访客统计部分 -->
+            {% if footer.show_visitor_count %}
+            <!-- 引入不蒜子脚本 -->
+            <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <span id="busuanzi_container_site_pv" style="display:none">
+                {{ footer.text_cn }}: <span id="busuanzi_value_site_pv" style="font-weight: bold; color: #000;"></span>
+            </span>
+            <!-- 分隔符 -->
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            {% endif %}
+
+            <!-- 2. Last Updated 部分 -->
+            <!-- 使用 Python (build.py) 传入的 build_date 变量 -->
+            &copy; {{ profile.name_en }}. Last updated: {{ build_date }}.
         </p>
     </div>
 </body>

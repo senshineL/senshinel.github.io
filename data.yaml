@@ -31,7 +31,7 @@ sections:
       - "Learning easy-to-use, general-purpose optimizers for discrete optimization problems"
       - "Learning optimizers for material design"
       - "Learning optimizers for post training of large language models (LLMs)"
-      - "Large langumage models for Optimization"
+      - "LLMs for Optimization"
     recruitment:
       enabled: true
       content: "<strong>招募</strong>: 本课题组常年招收硕士/博士研究生、访问学生、博士后、研究助理教授。
@@ -264,7 +264,7 @@ sections:
     entries: # 原 items 改为 entries
       - "CSE5025 - Combinatorial Optimization (组合优化), for graduate students, 2025 Fall"
       - "CS109 - Introduction to Java Programming, for undergraduate students, 2024 Fall"
-# footer:
-#   show_visitor_count: true
-#   text_cn: "本站总访问量"
-#   text_en: "Total Visitors"
+footer:
+  show_visitor_count: true
+  text_cn: "访问人数"
+  text_en: "Total Visitors"
