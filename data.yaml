@@ -35,7 +35,7 @@ sections:
     recruitment:
       enabled: true
       content: "<strong>招募</strong>: 本课题组常年招收硕士/博士研究生、访问学生、博士后、研究助理教授。
-      欢迎数理基础扎实、代码能力强的同学申请。申请时请将本人自述、成绩单、个人简历及相关能力发送至邮箱 liusc3 AT sustech.edu.cn 以及 chengy6 AT mail.sustech.edu.cn，邮件主题请注明为 申请人姓名+申请xx职位/xxx年入学博士生/硕士生。
+      欢迎数理基础扎实、代码能力强的同学申请。申请时请将本人自述、成绩单、个人简历及相关能力发送至邮箱 liusc3 AT sustech.edu.cn 以及 chengy6 AT mail.sustech.edu.cn，邮件主题请注明为 申请人姓名+申请xx职位/xxx年入学博士生/硕士生.
       <br><br>
       <strong>Recruitment</strong>: We have open positions for M.Sc./Ph.D. students, Visiting Scholars, Postdocs, and Research Assistant Professors. Candidates with strong backgrounds in mathematics and programming are highly encouraged to apply.
       To Apply: Please email your CV, transcripts, and personal statement to liusc3 AT sustech.edu.cn and chengy6 AT mail.sustech.edu.cn. Subject Line: Name + Position Applied / Intake Year."
@@ -264,7 +264,7 @@ sections:
     entries: # 原 items 改为 entries
       - "CSE5025 - Combinatorial Optimization (组合优化), for graduate students, 2025 Fall"
       - "CS109 - Introduction to Java Programming, for undergraduate students, 2024 Fall"
-footer:
-  show_visitor_count: true
-  text_cn: "本站总访问量"
-  text_en: "Total Visitors"
+# footer:
+#   show_visitor_count: true
+#   text_cn: "本站总访问量"
+#   text_en: "Total Visitors"
