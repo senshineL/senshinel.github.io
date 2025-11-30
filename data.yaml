@@ -87,6 +87,9 @@ sections:
       - title: "Preprints"
         note: "(First/corresponding-authored works listed; See <a href='https://scholar.google.com/citations?user=tV0nV3oAAAAJ&hl=en'>Google Scholar</a> for the complete list.)"
         entries: # 原 items 改为 entries
+          - authors: "Wenjie Chen, Li Zhuang, Ziying Luo, Yu Liu, Jiahao Wu, <b>Shengcai Liu</b>"
+            title: "Personalized Treatment Outcome Prediction from Scarce Data via Dual-Channel Knowledge Distillation and Adaptive Fusion"
+            venue: "arXiv preprint arXiv:2510.26444. <a href='https://arxiv.org/abs/2510.26444.pdf'>[Arxiv]</a>"
           - authors: "<b>Shengcai Liu</b>, Hui Ou-yang, Zhiyuan Wang, Cheng Chen, Qijun Cai, Yew-Soon Ong, Ke Tang"
             title: "Scalable Structure Learning of Bayesian Networks by Learning Algorithm Ensembles"
             venue: "arXiv preprint arXiv:2506.22848. <a href='https://arxiv.org/abs/2506.22848.pdf'>[Arxiv]</a>"
@@ -261,3 +264,7 @@ sections:
     entries: # 原 items 改为 entries
       - "CSE5025 - Combinatorial Optimization (组合优化), for graduate students, 2025 Fall"
       - "CS109 - Introduction to Java Programming, for undergraduate students, 2024 Fall"
+footer:
+  show_visitor_count: true
+  text_cn: "本站总访问量"
+  text_en: "Total Visitors"
