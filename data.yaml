@@ -16,7 +16,7 @@ profile:
 
 biography:
   en: "I received my B.Sc. and Ph.D. degrees in the School of Computer Science and Technology from USTC in 2014 and 2020, respectively, advised by Prof. Xin Yao and Prof. Ke Tang. From Jan 2021 to Jan 2023, I was a Research Assistant Professor at the CSE Department of SUSTech. From Jan 2023 to May 2024, I was a Visiting Professor, and later a senior scientist, at CFAR, A*STAR, Singapore, in collaboration with Prof. Yew-Soon Ong from NTU. I am also a member of the Nature Inspired Computation and Applications Laboratory (NICAL) led by Prof. Xin Yao and Prof. Ke Tang."
-  cn: "刘晟材博士，分别在2014年和2020年于中国科学技术大学计算机学院获得学士和博士学位。曾在新加坡科技研究局担任高级研究科学家，现任南方科技大学计算机科学与工程系助理教授、博导。长期从事学习优化 (Learn to Optimzie)、智能优化基座大模型、AI for Material等方向的研究。已获批主持国自然基金一项、华为合作项目两项，迄今已在NeurIPS、ICML、AAAI等CCF-A类会议以及IEEE TEVC、IEEE TCYB等智能优化旗舰期刊上以一作/通讯作者身份发表论文20余篇。刘博士曾多次受邀在国际学术会议上做大会报告，包括达格施图尔城堡研讨会2023、IEEE世界计算智能大会2022、以及第七届演化计算与学习研讨会。"
+  cn: "刘晟材博士，分别在2014年和2020年于中国科学技术大学计算机学院获得学士和博士学位。曾在新加坡科技研究局担任高级研究科学家，现任南方科技大学计算机科学与工程系助理教授、博导。长期从事学习优化 (Learn to optimize)、智能优化基座大模型、AI for Material等方向的研究。已获批主持国自然基金一项、华为合作项目两项，迄今已在NeurIPS、ICML、AAAI等CCF-A类会议以及IEEE TEVC、IEEE TCYB等智能优化旗舰期刊上以一作/通讯作者身份发表论文20余篇。刘博士曾多次受邀在国际学术会议上做大会报告，包括达格施图尔城堡研讨会2023、IEEE世界计算智能大会2022、以及第七届演化计算与学习研讨会。"
 
 # ==========================================
 # 核心内容区块
@@ -34,11 +34,12 @@ sections:
       - "LLMs for Optimization"
     recruitment:
       enabled: true
-      content: "<strong>招募</strong>: 本课题组常年招收硕士/博士研究生、访问学生、博士后、研究助理教授。
-      欢迎数理基础扎实、代码能力强的同学申请。申请时请将本人自述、成绩单、个人简历及相关能力发送至邮箱 liusc3 AT sustech.edu.cn 以及 chengy6 AT mail.sustech.edu.cn，邮件主题请注明为 申请人姓名+申请xx职位/xxx年入学博士生/硕士生.
-      <br><br>
-      <strong>Recruitment</strong>: We have open positions for M.Sc./Ph.D. students, Visiting Scholars, Postdocs, and Research Assistant Professors. Candidates with strong backgrounds in mathematics and programming are highly encouraged to apply.
-      To Apply: Please email your CV, transcripts, and personal statement to liusc3 AT sustech.edu.cn and chengy6 AT mail.sustech.edu.cn. Subject Line: Name + Position Applied / Intake Year."
+      content: >
+        <strong>招募</strong>: 本课题组常年招收硕士/博士研究生、访问学生、博士后、研究助理教授。
+        欢迎数理基础扎实、代码能力强的同学申请。申请时请将本人自述、成绩单、个人简历及相关能力发送至邮箱 liusc3 AT sustech.edu.cn 以及 chengy6 AT mail.sustech.edu.cn，邮件主题请注明为 申请人姓名+申请xx职位/xxx年入学博士生/硕士生.
+        <br><br>
+        <strong>Recruitment</strong>: We have open positions for M.Sc./Ph.D. students, Visiting Scholars, Postdocs, and Research Assistant Professors. Candidates with strong backgrounds in mathematics and programming are highly encouraged to apply.
+        To Apply: Please email your CV, transcripts, and personal statement to liusc3 AT sustech.edu.cn and chengy6 AT mail.sustech.edu.cn. Subject Line: Name + Position Applied / Intake Year.
 
   - id: "tag_projects"
     nav_label: "[Grants & Awards]"
@@ -87,6 +88,9 @@ sections:
       - title: "Preprints"
         note: "(First/corresponding-authored works listed; See <a href='https://scholar.google.com/citations?user=tV0nV3oAAAAJ&hl=en'>Google Scholar</a> for the complete list.)"
         entries: # 原 items 改为 entries
+          - authors: "Zhiyuan Wang, <b>Shengcai Liu</b>, Shaofeng Zhang, Ke Tang"
+            title: "A Novel Population Initialization Method via Adaptive Experience Transfer for General-Purpose Binary Evolutionary Optimization"
+            venue: "arXiv preprint arXiv:2512.00341. <a href='https://arxiv.org/abs/2512.00341.pdf'>[Arxiv]</a>"
           - authors: "Wenjie Chen, Li Zhuang, Ziying Luo, Yu Liu, Jiahao Wu, <b>Shengcai Liu</b>"
             title: "Personalized Treatment Outcome Prediction from Scarce Data via Dual-Channel Knowledge Distillation and Adaptive Fusion"
             venue: "arXiv preprint arXiv:2510.26444. <a href='https://arxiv.org/abs/2510.26444.pdf'>[Arxiv]</a>"
