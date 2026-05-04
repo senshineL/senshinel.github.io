@@ -4,7 +4,6 @@ profile:
   title_en: "Tenure-Track Assistant Professor, Ph.D Supervisor"
   title_cn: "助理教授，博导"
   affiliations:
-    # - "Department of Statistics and Data Science"
     - "Department of Computer Science and Engineering"
     - "Southern University of Science and Technology"
     # - "兼职导师, 北京中关村学院"
@@ -27,12 +26,11 @@ sections:
     nav_label: "[Research Interests]"
     header_title: "Research Interests"
     type: "interests"
-    intro: "Ultimately, I am obsessed with the fully-automated design of optimizers, as well as their applications in high-impact applications. Now I am interested in:"
+    # intro: "Now I am interested in:"
     entries:
-      - "Learning easy-to-use, general-purpose optimizers for discrete optimization problems"
-      - "Learning optimizers for material design"
-      - "Learning optimizers for post training of large language models (LLMs)"
-      - "LLMs for Optimization"
+      - "Learn to compress algorithm space"
+      - "Improving the stability and energy efficiency of LLMs and agentic AI systems"
+      - "Agentic AI for materials"
     recruitment:
       enabled: true
       content: >
@@ -95,9 +93,9 @@ sections:
           - authors: "Wenjie Chen, Li Zhuang, Ziying Luo, Yu Liu, Jiahao Wu, <b>Shengcai Liu</b>"
             title: "Personalized Treatment Outcome Prediction from Scarce Data via Dual-Channel Knowledge Distillation and Adaptive Fusion"
             venue: "arXiv preprint arXiv:2510.26444. <a href='https://arxiv.org/abs/2510.26444.pdf'>[Arxiv]</a>"
-          - authors: "<b>Shengcai Liu</b>, Hui Ou-yang, Zhiyuan Wang, Cheng Chen, Qijun Cai, Yew-Soon Ong, Ke Tang"
-            title: "Scalable Structure Learning of Bayesian Networks by Learning Algorithm Ensembles"
-            venue: "arXiv preprint arXiv:2506.22848. <a href='https://arxiv.org/abs/2506.22848.pdf'>[Arxiv]</a>"
+          # - authors: "<b>Shengcai Liu</b>, Hui Ou-yang, Zhiyuan Wang, Cheng Chen, Qijun Cai, Yew-Soon Ong, Ke Tang"
+          #   title: "Scalable Structure Learning of Bayesian Networks by Learning Algorithm Ensembles"
+          #   venue: "arXiv preprint arXiv:2506.22848. <a href='https://arxiv.org/abs/2506.22848.pdf'>[Arxiv]</a>"
           - authors: "Shaofeng Zhang, <b>Shengcai Liu</b>, Ning Lu, Jiahao Wu, Ji Liu, Yew-Soon Ong, Ke Tang"
             title: "LLM-Driven Instance-Specific Heuristic Generation and Selection"
             venue: "arXiv preprint arXiv:2506.00490. <a href='https://arxiv.org/abs/2506.00490.pdf'>[Arxiv]</a>"
@@ -162,12 +160,15 @@ sections:
             venue: "<b>IEEE Transactions on Evolutionary Computation</b>, 2021, 25(3): 595-607. <a href='https://ieeexplore.ieee.org/document/9354852/'>[Paper]</a> <a href='https://arxiv.org/pdf/2007.00501.pdf'>[Arxiv]</a> <a href='https://github.com/senshineL/CEPS'>[Code]</a>"
       - title: "Conference Papers"
         entries: # 原 items 改为 entries
+          - authors: "Zubin Zheng, Jiahao Wu, <b>Shengcai Liu*</b>"
+            title: "Neural QAOA<sup>2</sup>: Differentiable Joint Graph Partitioning and Parameter Initialization for Quantum Combinatorial Optimization"
+            venue: "In: <b>Proceedings of the 43rd International Conference on Machine Learning (ICML'2026)</b>, Seoul, South Korea, 2026."
           - authors: "Zhangying Feng, Qianglong Chen, Ning Lu, Yongqian Li, Siqi Cheng, Shuangmu Peng, Duyu Tang, <b>Shengcai Liu*</b>, Zhirui Zhang*"
             title: "Is PRM Necessary? Problem-Solving RL Implicitly Induces PRM Capability in LLMs"
-            venue: "In: <b>Proceedings of the 39th Annual Conference on Neural Information Processing Systems (NeurIPS'2025)</b>. <a href='https://arxiv.org/abs/2505.11227.pdf'>[Arxiv]</a>"
+            venue: "In: <b>Proceedings of the 39th Annual Conference on Neural Information Processing Systems (NeurIPS'2025)</b>. <a href='https://openreview.net/forum?id=ooiHIklvN5'>[Paper]</a> <a href='https://arxiv.org/abs/2505.11227.pdf'>[Arxiv]</a>"
           - authors: "Haoze Lv, Zhiyuan Wang, Wenjie Chen, <b>Shengcai Liu*</b>"
             title: "Cascaded Large-Scale TSP Solving with Unified Neural Guidance: Bridging Local and Population-based Search"
-            venue: "In: <b>Proceedings of the 28th European Conference on Artificial Intelligence (ECAI'2025)</b>, Bologna, Italy, 2025. <a href='https://arxiv.org/abs/2501.14285'>[Arxiv]</a>"
+            venue: "In: <b>Proceedings of the 28th European Conference on Artificial Intelligence (ECAI'2025)</b>, Bologna, Italy, 2025, 4961-4968. <a href='https://ebooks.iospress.nl/volumearticle/76344'>[Paper]</a> <a href='https://arxiv.org/abs/2501.14285'>[Arxiv]</a>"
           - authors: "Ning Lu, <b>Shengcai Liu*</b>, Jiahao Wu, Weiyu Chen, Zhirui Zhang, Yew-Soon Ong, Qi Wang, Ke Tang"
             title: "Safe Delta: Consistently Preserving Safety when Fine-Tuning LLMs on Diverse Datasets"
             venue: "In: <b>Proceedings of the 42nd International Conference on Machine Learning (ICML'2025)</b>, Vancouver, Canada, 2025. <a href='https://openreview.net/forum?id=QsCDgFKErb'>[Paper]</a> <a href='https://arxiv.org/abs/2505.12038'>[Arxiv]</a> <a href='https://github.com/ColinLu50/SafeDelta'>[Code]</a>"
@@ -222,45 +223,26 @@ sections:
           - “How Good is Neural Combinatorial Optimization?”, Dagstuhl Seminar “Synergizing Theory and Practice of Automated Algorithm Design for Optimization”. Aug 17, 2023. Dagstuhl, Germany.
           - “Learn to Optimize”, The 2022 IEEE World Congress on Computational Intelligence (WCCI’2022). Jul 18, 2022. [<a href='http://senshinel.github.io/files/L2O_tutorial.pdf'>Slides</a>], Online.
           - “Co-Evolved Parallel Algorithm Portfolios”, 第七届演化计算与学习研讨会 (The 7th Workshop on Evolutionary Computation and Learning, ECOLE’2021), 2021年5月15日, 武汉.
-          # - "<a href='https://cse.sustech.edu.cn/faculty/~yangp/IEEE_TF_EL/'>IEEE CIS Evolutionary Learning Task Force Vice Chair (2023-)</a>"
-      # - category: "Conference Chairs:"
-      #   content:
-      #     - "Chair of Special Session on 'Evolutionary Learning and Learning to Optimize' at IEEE CEC'25."
-      #     - "Chair of Special Session on 'Evolutionary Learning and Learning to Optimize' at IEEE WCCI'24."
-      # - category: "Journal Reviewers:"
-      #   content:
-      #     - "IEEE Transactions on Evolutionary Computation"
-      #     - "IEEE Transactions on Systems, Man and Cybernetics: Systems"
-      #     - "IEEE Transactions on Neural Network and Learning Systems"
 
-  # - id: "tag_students"
-  #   nav_label: "[Students]"
-  #   header_title: "Students"
-  #   type: "simple_list_grouped"
-  #   groups:
-  #     - title: "PhD Students"
-  #       entries: # 原 items 改为 entries
-  #         - "2025 - : Xiangyao Zhao 赵相尧"
-  #         - "2025 - : Yanshun Ye 叶彦顺"
-  #         - "2024 - : Peiguang Zhang 张沛光"
-  #         - "2024 - : Zhenhua Yang 杨振华 (at Beijing AI College)"
-  #         - "2023 - : Heping Fang 方和平"
-  #         - "2021 - : Muyao Zhong 钟慕尧"
-  #     - title: "Master Students"
-  #       entries: # 原 items 改为 entries
-  #         - "2025 - : Jimao Shi 史纪茂"
-  #         - "2025 - : Shiying Hu 胡世颖"
-  #         - "2025 - : Qiushi Li 李秋实"
-  #         - "2024 - : Zhixin Wang 王志新"
-  #         - "2024 - : Junji Ren 任俊吉"
-  #         - "2023 - : Yushi Lin 林雨诗"
-  #         - "2023 - : Xiangbo Deng 邓祥波"
-  #         - "2023 - : Boquan Jiang 姜博泉"
-  #         - "2024 - 2025: Jinglin Wang 王靖林 (Ph.D candidate at SUSTech)"
-  #         - "2022 - 2024: Zhenhua Yang 杨振华 (Ph.D candidate at Beijing AI College)"
-  #         - "2022 - 2024: Chenkai Wang 王晨凯 (at SUSTech)"
-  #         - "2021 - 2024: Peilin Wu 吴培霖 (at Meituan)"
-  #         - "2020 - 2023: Lang Fu 付浪 (at Alibaba)"
+  - id: "tag_students"
+    nav_label: "[People]"
+    header_title: "People"
+    type: "simple_list_grouped"
+    groups:
+      - title: "Postdoctoral Researchers"
+        entries:
+          - "Zhiyuan Huang 黄致远 (Ph.D. in Materials Science, Northwestern Polytechnical University)"
+      - title: "PhD Students"
+        entries:
+          - "2026 - : Zheyu Zhang 张哲语"
+          - "2025 - : Jinglin Wang 王靖林"
+          - "2025 - : Haoze Lv 吕昊泽 (joint Ph.D. program with Beijing Zhongguancun Academy)"
+      - title: "Master Students"
+        entries:
+          - "2026 - : Shuqi Yuan 袁书起"
+          - "2026 - : Linran Zhong 钟林然"
+          - "2025 - : Zubin Zheng 郑祖彬"
+          - "2025 - : Zhucai Duan 段柱材 (joint M.Sc. program with Ping An Technology)"
 
   - id: "tag_teaching"
     nav_label: "[Teaching]"
@@ -268,7 +250,7 @@ sections:
     type: "simple_list"
     entries: # 原 items 改为 entries
       - "CSE5025 - Combinatorial Optimization (组合优化), for graduate students, 2025 Fall"
-      - "CS109 - Introduction to Java Programming, for undergraduate students, 2024 Fall"
+      - "CS109 - Introduction to Java Programming, for undergraduate students, 2024 Fall, 2026 Spring"
 footer:
   show_visitor_count: true
   text_cn: "访问人数"
