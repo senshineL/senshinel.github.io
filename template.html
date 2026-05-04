@@ -6,96 +6,438 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>{{ profile.name_en }} @ SUSTech</title>
     <style type="text/css">
+        :root {
+            --content-width: 1040px;
+            --page-gutter: 24px;
+            --text-color: #1f2937;
+            --muted-color: #4b5563;
+            --heading-color: #111827;
+            --rule-color: #d6dce5;
+            --link-color: #2f5d8a;
+            --link-hover-color: #1d3d5c;
+            --callout-border: #b45b5b;
+            --callout-bg: #faf6f3;
+        }
+
         body {
             margin: 0;
-            padding: 0;
+            padding: 18px 0 40px;
             border: 0;
             width: 100%;
             background: #fff;
-            font-size: 90%;
-            font-family: 'Helvetical', sans-serif;
+            color: var(--text-color);
+            font-size: 15px;
+            line-height: 1.65;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
         }
 
-        h1,
-        h2,
-        h3,
-        p {
-            padding-left: 20px;
-            clear: left;
+        a {
+            color: var(--link-color);
+            text-decoration: none;
         }
 
-        h2 {
-            padding-top: 30px;
+        a:hover {
+            color: var(--link-hover-color);
         }
 
-        /* Navigation Bar CSS - Updated for Blue Links */
+        .page-header,
+        .bio-block,
+        body>h3,
+        body>p,
+        body>blockquote,
+        body>ul,
+        body>ol,
+        #nav_bar,
+        .page-footer {
+            width: min(var(--content-width), calc(100% - (2 * var(--page-gutter))));
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: border-box;
+        }
+
+        .page-header {
+            display: grid;
+            grid-template-columns: 190px minmax(0, 1fr) 290px;
+            gap: 28px;
+            align-items: start;
+            border-collapse: collapse;
+            margin-top: 6px;
+            margin-bottom: 16px;
+        }
+
+        .page-header tbody,
+        .page-header tr {
+            display: contents;
+        }
+
+        .page-header td {
+            vertical-align: top;
+            width: auto !important;
+            height: auto !important;
+        }
+
+        .page-header h1,
+        .page-header p {
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .page-header h1 {
+            margin: 0 0 12px;
+            color: var(--heading-color);
+            font-size: 28px;
+            line-height: 1.2;
+            font-weight: 650;
+        }
+
+        .page-header p {
+            margin: 0 0 10px;
+            color: var(--muted-color);
+        }
+
+        .page-header td:nth-child(2)>p:last-child {
+            margin-bottom: 0;
+        }
+
+        .page-header td:nth-child(2) {
+            padding-right: 16px;
+        }
+
+        .page-header td:nth-child(3) {
+            text-align: right !important;
+        }
+
+        .profile-photo {
+            display: block;
+            width: 172px;
+            max-width: 100%;
+            height: auto;
+            margin-right: 17px;
+            border-radius: 6px;
+            box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+        }
+
+        .logo-strip {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 26px;
+            height: 100%;
+        }
+
+        .bio-block {
+            margin-top: 0;
+            margin-bottom: 22px;
+            padding: 0 0 0 18px !important;
+            list-style: none;
+        }
+
+        .bio-block p {
+            padding-left: 0;
+            margin: 0;
+            color: var(--muted-color);
+        }
+
+        body>h3 {
+            margin-top: 28px;
+            margin-bottom: 12px;
+            padding-left: 0;
+            color: var(--heading-color);
+            font-size: 21px;
+            line-height: 1.35;
+            font-weight: 640;
+        }
+
+        body>p {
+            margin-top: 18px;
+            margin-bottom: 8px;
+            padding-left: 0;
+            color: var(--heading-color);
+        }
+
+        .section-group-title {
+            margin-top: 18px;
+            margin-bottom: 8px;
+            padding-left: 0;
+            color: var(--heading-color);
+        }
+
+        .section-group-title strong {
+            font-size: 15px;
+            font-weight: 620;
+        }
+
+        .section-header-note {
+            margin-top: -4px;
+            margin-bottom: 14px;
+            padding-left: 0;
+            color: var(--muted-color);
+            font-size: 14px;
+            line-height: 1.55;
+        }
+
+        .group-note {
+            color: var(--muted-color);
+            font-size: 14px;
+            font-weight: 400;
+        }
+
         #nav_bar {
-            clear: left;
-            float: left;
+            clear: none;
+            float: none;
             padding: 0;
-            border-top: 2px solid black;
-            border-bottom: 2px solid black;
-            width: 100%;
-            overflow: hidden;
-            font-size: 130%;
-            font-family: Georgia, Serif;
+            margin-top: 18px;
+            margin-bottom: 16px;
+            border-top: 1px solid var(--rule-color);
+            border-bottom: 1px solid var(--rule-color);
+            overflow: visible;
+            font-size: 100%;
+            font-family: inherit;
+        }
+
+        #nav_bar + h3 {
+            margin-top: 0;
         }
 
         #nav_bar ul {
-            float: left;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 4px 10px;
             margin: 0;
-            padding: 0;
+            padding: 8px 0;
             list-style: none;
-            position: relative;
-            left: 50%;
-            text-align: center;
+            position: static;
+            text-align: left;
         }
 
         #nav_bar ul li {
             display: block;
-            float: left;
             list-style: none;
             margin: 0;
             padding: 0;
-            position: relative;
-            right: 50%;
+            position: static;
         }
 
         #nav_bar ul li a {
             display: block;
-            float: left;
-            margin: 1px 1px 0 1px;
-            padding: 6px 10px 6px 6px;
-            background: #fff;
+            margin: 0;
+            padding: 6px 8px;
+            background: transparent;
             text-decoration: none;
-            color: #0066cc;
-            /* Blue links */
-            font-size: 90%;
-            font-family: sans-serif
+            color: var(--link-color);
+            font-size: 15px;
+            font-weight: 500;
+            font-family: inherit;
+            border-radius: 4px;
         }
 
         #nav_bar ul li a:hover {
-            background: #eee;
-            color: #003366;
+            background: #f3f5f7;
+            color: var(--heading-color);
         }
 
-        ul li {
-            margin-bottom: 5px;
+        body>blockquote {
+            margin-top: 0;
+            margin-bottom: 20px;
+            padding: 0 0 0 18px;
         }
 
-        blockquote {
-            margin: 10px 20px;
+        .section-intro {
+            padding-left: 0;
+            margin: 0 0 8px;
+            color: var(--muted-color);
+        }
+
+        body>blockquote ul {
+            margin: 0;
+            padding-left: 22px !important;
+        }
+
+        body>blockquote li,
+        body>ul:not(.bio-block):not(.recruitment-callout) li,
+        body>ol li {
+            margin-bottom: 10px;
+        }
+
+        .recruitment-callout {
+            margin-top: 10px;
+            margin-bottom: 26px;
+            padding: 14px 18px !important;
+            list-style: none;
+            border-left: 3px solid var(--callout-border);
+            border-radius: 0 6px 6px 0;
+            background: var(--callout-bg);
+            color: var(--text-color) !important;
+        }
+
+        .recruitment-callout p {
+            padding-left: 0;
+            margin: 0;
+            color: var(--muted-color);
+        }
+
+        body>ul:not(.bio-block):not(.recruitment-callout) {
+            margin-top: 0;
+            margin-bottom: 22px;
+            padding-left: 22px;
+        }
+
+        body>ul blockquote {
+            margin: 4px 0 12px;
+            color: var(--muted-color);
+        }
+
+        body>ul blockquote p {
+            padding-left: 0;
+            margin: 0;
+        }
+
+        body>ol {
+            margin-top: 0;
+            margin-bottom: 24px;
+            padding-left: 24px;
+        }
+
+        .publication-list {
+            margin-top: 4px;
+        }
+
+        .publication-item {
+            margin-bottom: 12px;
+            padding-left: 4px;
+        }
+
+        .publication-authors {
+            display: block;
+            color: var(--muted-color);
+        }
+
+        .publication-title {
+            display: block;
+            margin: 2px 0 4px;
+            color: var(--heading-color);
+            font-weight: 630;
+            line-height: 1.45;
+        }
+
+        .publication-venue {
+            display: block;
+            color: #374151;
+            font-size: 14px;
+            line-height: 1.55;
+        }
+
+        .publication-venue a {
+            white-space: nowrap;
+        }
+
+        .activity-list {
+            margin-top: 0;
+            margin-bottom: 24px;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .activity-item {
+            margin-bottom: 18px;
+            padding-left: 18px;
+            border-left: 2px solid #e5e7eb;
+        }
+
+        .activity-category {
+            margin: 0 0 8px;
+            padding-left: 0;
+            color: var(--heading-color);
+            font-size: 15px;
+            font-weight: 620;
+        }
+
+        .activity-content {
+            margin: 0;
+            padding-left: 18px;
+            color: var(--muted-color);
+        }
+
+        .activity-content li {
+            margin-bottom: 6px;
+        }
+
+        .people-list {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            padding-left: 18px;
+            color: var(--muted-color);
+            font-variant-numeric: tabular-nums;
+        }
+
+        .people-list li {
+            margin-bottom: 6px;
+        }
+
+        .page-footer {
+            margin-top: 34px;
+            padding-top: 18px;
+            border-top: 1px solid var(--rule-color);
+            text-align: center;
+            font-size: 13px;
+            color: #6b7280;
+        }
+
+        .page-footer p {
+            padding-left: 0;
+            margin: 0;
+        }
+
+        @media (max-width: 900px) {
+            body {
+                padding-top: 12px;
+            }
+
+            .page-header,
+            .page-header tbody,
+            .page-header tr,
+            .page-header td {
+                display: block;
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            .page-header td {
+                padding: 0;
+                text-align: left !important;
+            }
+
+            .profile-photo {
+                margin: 0 auto 18px;
+            }
+
+            .logo-strip {
+                justify-content: flex-start;
+                gap: 24px;
+                margin-top: 6px;
+            }
+
+            .publication-item {
+                padding-left: 0;
+            }
+
+            .activity-item {
+                padding-left: 14px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <table width="1087" height="300" border="0">
+    <table class="page-header" width="1087" height="300" border="0">
         <tbody>
             <tr>
                 <td width="190" height="254" align="left">
-                    <img src="{{ profile.photo_path }}" hspace="17" height="205" alt="Photo">
+                    <img class="profile-photo" src="{{ profile.photo_path }}" alt="Photo">
                 </td>
                 <td width="500" height="274">
                     <h1>{{ profile.name_en }} ({{ profile.name_cn }})</h1>
@@ -112,7 +454,7 @@
                     </p>
                 </td>
                 <td width="350" align="center" style="vertical-align: middle; height: 200px;">
-                    <div style="display: flex; justify-content: center; align-items: center; gap: 40px; height: 100%;">
+                    <div class="logo-strip">
                         <img src="{{ profile.logo1_path }}" style="height: 130px; width: auto; max-width: 350px;">
                         <img src="{{ profile.logo2_path }}" style="height: 90px; width: auto; max-width: 230px;">
                     </div>
@@ -122,12 +464,12 @@
     </table>
 
     <h3>Short Biography</h3>
-    <ul style="padding-inline-start:20px;padding-left:20px;padding-right:20px">
+    <ul class="bio-block" style="padding-inline-start:20px;padding-left:20px;padding-right:20px">
         <p>{{ biography.en }}</p>
     </ul>
 
     <h3>个人简介</h3>
-    <ul style="padding-inline-start:20px;padding-left:20px;padding-right:20px">
+    <ul class="bio-block" style="padding-inline-start:20px;padding-left:20px;padding-right:20px">
         <p>{{ biography.cn }}</p>
     </ul>
 
@@ -140,17 +482,22 @@
             {% endfor %}
         </ul>
     </div>
-    <br><br>
 
     {% for section in sections %}
 
-    <h3 id="{{ section.id }}" {% if section.type=='publications' %}style="display: inline;" {% endif %}>
+    <h3 id="{{ section.id }}">
         {{ section.header_title }}
     </h3>
 
+    {% if section.type == 'publications' and section.groups and section.groups[0].note %}
+    <p class="section-header-note">{{ section.groups[0].note }}</p>
+    {% endif %}
+
     {% if section.type == 'interests' %}
     <blockquote>
-        <p style="padding:0px;text-align: left">{{ section.intro }}</p>
+        {% if section.intro %}
+        <p class="section-intro" style="padding:0px;text-align: left">{{ section.intro }}</p>
+        {% endif %}
         <ul style="padding-inline-start:20px;padding-left:20px">
             {% for item in section.entries %}
             <li style="margin-bottom:10px">{{ item }}</li>
@@ -158,7 +505,7 @@
         </ul>
     </blockquote>
     {% if section.recruitment and section.recruitment.enabled %}
-    <ul style="padding-inline-start:20px;padding-left:20px; color: #FF0000">
+    <ul class="recruitment-callout" style="padding-inline-start:20px;padding-left:20px; color: #FF0000">
         <p>{{ section.recruitment.content }}</p>
     </ul>
     {% endif %}
@@ -179,7 +526,7 @@
 
     {% elif section.type == 'grouped_list' %}
     {% for group in section.groups %}
-    <p><strong>{{ group.title }}</strong></p>
+    <p class="section-group-title"><strong>{{ group.title }}</strong></p>
     <blockquote>
         <ul style="padding-inline-start:20px;padding-left:20px">
             {% for item in group.entries %}
@@ -191,40 +538,45 @@
 
     {% elif section.type == 'publications' %}
     {% for group in section.groups %}
-    <p><strong>{{ group.title }}</strong> {{ group.note }}</p>
-    <ol>
+    <p class="section-group-title"><strong>{{ group.title }}</strong></p>
+    <ol class="publication-list">
         {% for paper in group.entries %}
-        <li>
-            {{ paper.authors }}. <strong>{{ paper.title }}</strong>. <br>
-            {{ paper.venue }}<br><br>
+        <li class="publication-item">
+            <span class="publication-authors">{{ paper.authors }}.</span>
+            <span class="publication-title">{{ paper.title }}.</span>
+            <span class="publication-venue">{{ paper.venue }}</span>
         </li>
         {% endfor %}
     </ol>
     {% endfor %}
 
     {% elif section.type == 'activities' %}
-    <ul>
+    <ul class="activity-list">
         {% for item in section.entries %}
-        <li><strong>{{ item.category }}</strong></li>
-        <blockquote style="margin:0px">
-            <p>
+        <li class="activity-item">
+            <p class="activity-category">{{ item.category }}</p>
+            <ul class="activity-content">
                 {% for line in item.content %}
-                {{ line }}<br>
+                <li>{{ line }}</li>
                 {% endfor %}
-            </p>
-        </blockquote>
+            </ul>
+        </li>
         {% endfor %}
     </ul>
 
     {% elif section.type == 'simple_list_grouped' %}
+    <ul class="activity-list">
     {% for group in section.groups %}
-    <p><strong>{{ group.title }}</strong></p>
-    <ul>
-        {% for item in group.entries %}
-        <li>{{ item }}</li>
-        {% endfor %}
-    </ul>
+        <li class="activity-item">
+            <p class="activity-category">{{ group.title }}</p>
+            <ul class="activity-content people-list">
+                {% for item in group.entries %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </li>
     {% endfor %}
+    </ul>
 
     {% elif section.type == 'simple_list' %}
     <ul>
@@ -239,14 +591,14 @@
     <br><br>
 
     <!-- Footer -->
-    <div
+    <div class="page-footer"
         style="text-align: center; font-size: 80%; color: #666; border-top: 1px solid #ddd; padding-top: 20px; margin-bottom: 20px;">
 
         <p style="margin-top: 5px;">
             <!-- 1. 访客统计部分 -->
             {% if footer.show_visitor_count %}
             <!-- 引入不蒜子脚本 -->
-            <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
             <span id="busuanzi_container_site_pv" style="display:none">
                 {{ footer.text_cn }}: <span id="busuanzi_value_site_pv" style="font-weight: bold; color: #000;"></span>
             </span>
