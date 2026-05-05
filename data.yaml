@@ -165,7 +165,7 @@ sections:
             venue: "In: <b>Proceedings of the 43rd International Conference on Machine Learning (ICML'2026)</b>, Seoul, South Korea, Jul 6 - 11, 2026."
           - authors: "Zhangying Feng, Qianglong Chen, Ning Lu, Yongqian Li, Siqi Cheng, Shuangmu Peng, Duyu Tang, <b>Shengcai Liu*</b>, Zhirui Zhang*"
             title: "Is PRM Necessary? Problem-Solving RL Implicitly Induces PRM Capability in LLMs"
-            venue: "In: <b>Proceedings of the 39th Annual Conference on Neural Information Processing Systems (NeurIPS'2025)</b>, Nov 30 - Dec 7, 2025. <a href='https://openreview.net/forum?id=ooiHIklvN5'>[Paper]</a> <a href='https://arxiv.org/abs/2505.11227.pdf'>[Arxiv]</a>"
+            venue: "In: <b>Proceedings of the 39th Annual Conference on Neural Information Processing Systems (NeurIPS'2025)</b>, San Diego, CA, Nov 30 - Dec 7, 2025. <a href='https://openreview.net/forum?id=ooiHIklvN5'>[Paper]</a> <a href='https://arxiv.org/abs/2505.11227.pdf'>[Arxiv]</a>"
           - authors: "Haoze Lv, Zhiyuan Wang, Wenjie Chen, <b>Shengcai Liu*</b>"
             title: "Cascaded Large-Scale TSP Solving with Unified Neural Guidance: Bridging Local and Population-based Search"
             venue: "In: <b>Proceedings of the 28th European Conference on Artificial Intelligence (ECAI'2025)</b>, Bologna, Italy, Oct 25 - 30, 2025, 4961-4968. <a href='https://ebooks.iospress.nl/volumearticle/76344'>[Paper]</a> <a href='https://arxiv.org/abs/2501.14285'>[Arxiv]</a>"
