@@ -50,6 +50,7 @@
         body>blockquote,
         body>ul,
         body>ol,
+        .publication-group,
         #nav_bar,
         .page-footer {
             width: min(var(--content-width), calc(100% - (2 * var(--page-gutter))));
@@ -197,6 +198,53 @@
             font-weight: 400;
         }
 
+        .publication-group-title {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .publication-group-title strong {
+            font-size: 17px;
+            font-weight: 660;
+            line-height: 1.35;
+        }
+
+        .publication-toggle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            padding: 0;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        .publication-toggle:hover,
+        .publication-toggle:focus-visible {
+            border-color: #d8dee7;
+            background: #f8fafc;
+            outline: none;
+        }
+
+        .publication-toggle-icon {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-left: 6px solid var(--muted-color);
+            transform: rotate(90deg);
+            transition: transform 0.15s ease;
+        }
+
+        .publication-group.is-collapsed .publication-toggle-icon {
+            transform: rotate(0deg);
+        }
+
         #nav_bar {
             clear: none;
             float: none;
@@ -316,6 +364,8 @@
 
         .publication-list {
             margin-top: 4px;
+            margin-bottom: 24px;
+            padding-left: 24px;
         }
 
         .publication-item {
@@ -334,6 +384,52 @@
             color: var(--heading-color);
             font-weight: 630;
             line-height: 1.45;
+        }
+
+        .publication-tag {
+            display: inline-block;
+            margin-left: 5px;
+            padding: 1px 5px;
+            border: 1px solid #d8dee7;
+            border-radius: 999px;
+            background: #f8fafc;
+            color: #6b7280;
+            font-size: 10px;
+            line-height: 1.35;
+            font-weight: 500;
+            letter-spacing: 0;
+            vertical-align: 0.08em;
+            white-space: nowrap;
+        }
+
+        .publication-tag[data-tag="L2O"] {
+            border-color: #cfd8e6;
+            background: #f7f9fc;
+            color: #53657d;
+        }
+
+        .publication-tag[data-tag="LLM/Agent"] {
+            border-color: #c8ddcf;
+            background: #f6fbf7;
+            color: #4f705a;
+        }
+
+        .publication-tag[data-tag="Applications"] {
+            border-color: #e1d5c5;
+            background: #fbf8f2;
+            color: #765f45;
+        }
+
+        .publication-tag[data-tag="Quantum"] {
+            border-color: #d0dce4;
+            background: #f6fafc;
+            color: #4f6a79;
+        }
+
+        .publication-tag[data-tag="Material"] {
+            border-color: #e2d7cb;
+            background: #fbf8f3;
+            color: #755f4a;
         }
 
         .publication-venue {
@@ -529,7 +625,7 @@
 
     <h3>个人简介</h3>
     <ul class="bio-block" style="padding-inline-start:20px;padding-left:20px;padding-right:20px">
-        <p>刘晟材博士，分别在2014年和2020年于中国科学技术大学计算机学院获得学士和博士学位。曾在新加坡科技研究局担任高级研究科学家，现任南方科技大学计算机科学与工程系助理教授、博导，北京中关村学院兼职导师。长期从事学习优化 (Learn to optimize)、LLM/Agentic AI post training、AI for Quantum and Material等方向的研究。已获批主持国自然基金一项、华为合作项目两项，迄今已在NeurIPS、ICML、AAAI等CCF-A类会议以及IEEE TEVC、IEEE TCYB等智能优化旗舰期刊上以一作/通讯作者身份发表论文20余篇。刘博士曾多次受邀在国际学术会议上做大会报告，包括达格施图尔城堡研讨会2023、IEEE世界计算智能大会2022、以及第七届演化计算与学习研讨会。</p>
+        <p>刘晟材博士，分别在2014年和2020年于中国科学技术大学计算机学院获得学士和博士学位。曾在新加坡科技研究局担任高级研究科学家，现任南方科技大学计算机科学与工程系助理教授、博导，北京中关村学院兼职博导。长期从事学习优化 (Learn to optimize)、大模型（LLM）/ 智能体（Agents）及其在科学领域的应用研究。已获批主持国自然基金一项、华为合作项目两项，迄今已在NeurIPS、ICML、AAAI等CCF-A类会议以及IEEE TPAMI、TEVC等人工智能旗舰期刊上以一作/通讯作者身份发表论文20余篇。刘博士曾多次受邀在国际学术会议上做大会报告，包括达格施图尔城堡研讨会2023、IEEE世界计算智能大会2022、以及第七届演化计算与学习研讨会。</p>
     </ul>
 
     <div id="nav_bar">
@@ -575,11 +671,9 @@
         
         <ul style="padding-inline-start:20px;padding-left:20px">
             
-            <li style="margin-bottom:10px">Learn to compress algorithm space</li>
+            <li style="margin-bottom:10px"><b>Learn to Optimize (L2O)</b></li>
             
-            <li style="margin-bottom:10px">Improving the stability and energy efficiency of LLMs and agentic AI systems</li>
-            
-            <li style="margin-bottom:10px">Agentic AI for materials and quantum</li>
+            <li style="margin-bottom:10px"><b>LLM/Agent Post-Training and Scientific Applications in Quantum and Material</b></li>
             
         </ul>
     </blockquote>
@@ -637,210 +731,280 @@
     </h3>
 
     
+    <p class="section-header-note">(First/corresponding-authored works listed; * indicates corresponding author; See <a href='https://scholar.google.com/citations?user=tV0nV3oAAAAJ&hl=en'>Google Scholar</a> for the complete list.)</p>
+    
 
     
     
-    <p class="section-group-title"><strong>Journal Papers</strong></p>
+    <div class="publication-group">
+    <p class="section-group-title publication-group-title">
+        <button class="publication-toggle" type="button" aria-expanded="true" aria-label="Toggle Preprints">
+            <span class="publication-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <strong>Preprints</strong>
+    </p>
     <ol class="publication-list">
+        
+        <li class="publication-item">
+            <span class="publication-authors">Tianhang Lu, Runtian Ren, <b>Shengcai Liu*</b>.</span>
+            <span class="publication-title">Learning-Augmented Algorithms for Online Vertex Cover.</span>
+            <span class="publication-venue">arXiv preprint arXiv:2606.22831. <a href='https://arxiv.org/abs/2606.22831'>[Arxiv]</a> <span class="publication-tag" data-tag="L2O">L2O</span></span>
+        </li>
+        
+        <li class="publication-item">
+            <span class="publication-authors">Rui Xu, Yufan Liao, Haoze Lv, <b>Shengcai Liu*</b>, Yi Mei, Ke Tang.</span>
+            <span class="publication-title">Large Language Model-Driven Cooperative Operator Ensemble Evolution for Permutation Flow Shop Scheduling.</span>
+            <span class="publication-venue">arXiv preprint arXiv:2606.15334. <a href='https://arxiv.org/abs/2606.15334'>[Arxiv]</a> <span class="publication-tag" data-tag="L2O">L2O</span> <span class="publication-tag" data-tag="LLM/Agent">LLM/Agent</span> <span class="publication-tag" data-tag="Applications">Applications</span></span>
+        </li>
+        
+        <li class="publication-item">
+            <span class="publication-authors">Ning Lu, Baijiong Lin, <b>Shengcai Liu*</b>, Jiahao Wu, Haoze Lv, Yanbin Wei, Lingting Zhu, Shengju Qian, Xin Wang, Ying-Cong Chen, Qi Wang, Ke Tang.</span>
+            <span class="publication-title">Policy and World Modeling Co-Training for Language Agents.</span>
+            <span class="publication-venue">arXiv preprint arXiv:2606.02388. <a href='https://arxiv.org/abs/2606.02388'>[Arxiv]</a> <span class="publication-tag" data-tag="LLM/Agent">LLM/Agent</span></span>
+        </li>
+        
+        <li class="publication-item">
+            <span class="publication-authors">Haoze Lv, Ning Lu, Ziang Zhou, <b>Shengcai Liu*</b>.</span>
+            <span class="publication-title">AHD Agent: Agentic Reinforcement Learning for Automatic Heuristic Design.</span>
+            <span class="publication-venue">arXiv preprint arXiv:2605.08756. <a href='https://arxiv.org/abs/2605.08756'>[Arxiv]</a> <span class="publication-tag" data-tag="L2O">L2O</span> <span class="publication-tag" data-tag="LLM/Agent">LLM/Agent</span></span>
+        </li>
+        
+        <li class="publication-item">
+            <span class="publication-authors">Jiahao Wu, Ning Lu, <b>Shengcai Liu*</b>, Kun Wang, Yanting Yang, Bailong Lin, Chen Jason Zhang, Li Qing, Ke Tang.</span>
+            <span class="publication-title">Train at Moving Edge: Online-Verified Prompt Selection for Efficient RL Training of Large Reasoning Models.</span>
+            <span class="publication-venue">arXiv preprint arXiv:2603.25184. <a href='https://arxiv.org/abs/2603.25184'>[Arxiv]</a> <span class="publication-tag" data-tag="LLM/Agent">LLM/Agent</span></span>
+        </li>
+        
+    </ol>
+    </div>
+    
+    <div class="publication-group">
+    <p class="section-group-title publication-group-title">
+        <button class="publication-toggle" type="button" aria-expanded="true" aria-label="Toggle Journal Papers">
+            <span class="publication-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <strong>Journal Papers</strong>
+    </p>
+    <ol class="publication-list">
+        
+        <li class="publication-item">
+            <span class="publication-authors"><b>Shengcai Liu</b>, Zhiyuan Wang, Yew-Soon Ong, Xin Yao, and Ke Tang.</span>
+            <span class="publication-title">Learning Mixture-of-Experts for General-Purpose Black-Box Discrete Optimization.</span>
+            <span class="publication-venue"><b>IEEE Transactions on Pattern Analysis and Machine Intelligence</b>, 2026, To appear. <a href='https://arxiv.org/pdf//2405.18884.pdf'>[Arxiv]</a> <span class="publication-tag" data-tag="L2O">L2O</span></span>
+        </li>
+        
+        <li class="publication-item">
+            <span class="publication-authors">Qingya Li, <b>Shengcai Liu*</b>, Juan Zou, and Ke Tang.</span>
+            <span class="publication-title">A novel dual-stage algorithm for capacitated arc routing problems with time-dependent service costs.</span>
+            <span class="publication-venue"><b>Memetic Computing</b>, 2026, 18(3): 33. <a href='https://link.springer.com/article/10.1007/s12293-026-00515-4'>[Paper]</a><a href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4832913'>[Arxiv]</a> <span class="publication-tag" data-tag="Applications">Applications</span></span>
+        </li>
         
         <li class="publication-item">
             <span class="publication-authors">Rui Xu, Xing Fan, <b>Shengcai Liu*</b>, Wenjie Chen, Ke Tang.</span>
             <span class="publication-title">Memetic Search for Green Vehicle Routing Problem with Private Capacitated Refueling Stations.</span>
-            <span class="publication-venue"><b>IEEE Transactions on Evolutionary Computation</b>, 2025, To appear. <a href='https://ieeexplore.ieee.org/abstract/document/11271862'>[Paper]</a> <a href='https://arxiv.org/pdf//2504.04527.pdf'>[Arxiv]</a> <a href='https://github.com/FXBZ-research/METS-Algorithm'>[Code]</a></span>
+            <span class="publication-venue"><b>IEEE Transactions on Evolutionary Computation</b>, 2025, To appear. <a href='https://ieeexplore.ieee.org/abstract/document/11271862'>[Paper]</a> <a href='https://arxiv.org/pdf//2504.04527.pdf'>[Arxiv]</a> <a href='https://github.com/FXBZ-research/METS-Algorithm'>[Code]</a> <span class="publication-tag" data-tag="Applications">Applications</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors">Zhiyuan Wang, <b>Shengcai Liu*</b>, Peng Yang, and Ke Tang.</span>
             <span class="publication-title">Evolving Generalizable Parallel Algorithm Portfolios for Binary Optimization Problems via Domain-Agnostic Instance Generation.</span>
-            <span class="publication-venue"><b>IEEE Transactions on Evolutionary Computation</b>, 2025, To appear. <a href='https://ieeexplore.ieee.org/abstract/document/11261396'>[Paper]</a> <a href='https://arxiv.org/pdf//2501.02906.pdf'>[Arxiv]</a> <a href='https://github.com/MetaronWang/DACE'>[Code]</a></span>
+            <span class="publication-venue"><b>IEEE Transactions on Evolutionary Computation</b>, 2025, To appear. <a href='https://ieeexplore.ieee.org/abstract/document/11261396'>[Paper]</a> <a href='https://arxiv.org/pdf//2501.02906.pdf'>[Arxiv]</a> <a href='https://github.com/MetaronWang/DACE'>[Code]</a> <span class="publication-tag" data-tag="L2O">L2O</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors">Wenjie Chen, <b>Shengcai Liu*</b>, Yew-Soon Ong, Li Zhuang, and Ke Tang.</span>
             <span class="publication-title">Neural Influence Estimator: Towards Real-time Solutions to Influence Blocking Maximization.</span>
-            <span class="publication-venue"><b>IEEE Transactions on Computational Social Systems</b>, 2025, 12(6): 5155-5167. <a href='https://ieeexplore.ieee.org/abstract/document/11037661'>[Paper]</a> <a href='https://arxiv.org/pdf//2308.14012.pdf'>[Arxiv]</a></span>
+            <span class="publication-venue"><b>IEEE Transactions on Computational Social Systems</b>, 2025, 12(6): 5155-5167. <a href='https://ieeexplore.ieee.org/abstract/document/11037661'>[Paper]</a> <a href='https://arxiv.org/pdf//2308.14012.pdf'>[Arxiv]</a> <span class="publication-tag" data-tag="L2O">L2O</span> <span class="publication-tag" data-tag="Applications">Applications</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors">Zubin Zheng, <b>Shengcai Liu*</b>, and Yew-Soon Ong.</span>
             <span class="publication-title">Hybrid Memetic Search for Electric Vehicle Routing with Time Windows, Simultaneous Pickup-Delivery, and Partial Recharges.</span>
-            <span class="publication-venue"><b>IEEE Transactions on Emerging Topics in Computational Intelligence</b>, 2025, 9(6): 3773-3787. <a href='https://ieeexplore.ieee.org/abstract/document/11048636'>[Paper]</a> <a href='https://arxiv.org/pdf//2410.19580.pdf'>[Arxiv]</a> <a href='https://github.com/0SliverBullet/EVRP-TW-SPD-HMA'>[Code]</a></span>
+            <span class="publication-venue"><b>IEEE Transactions on Emerging Topics in Computational Intelligence</b>, 2025, 9(6): 3773-3787. <a href='https://ieeexplore.ieee.org/abstract/document/11048636'>[Paper]</a> <a href='https://arxiv.org/pdf//2410.19580.pdf'>[Arxiv]</a> <a href='https://github.com/0SliverBullet/EVRP-TW-SPD-HMA'>[Code]</a> <span class="publication-tag" data-tag="Applications">Applications</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors">Jiahao Wu, Wenqi Fan, Jingfan Chen, <b>Shengcai Liu*</b>, Qijiong Liu, Rui He, Qing Li, and Ke Tang.</span>
             <span class="publication-title">Condensing Pre-augmented Recommendation Data via Lightweight Policy Gradient Estimation.</span>
-            <span class="publication-venue"><b>IEEE Transactions on Knowledge and Data Engineering</b>, 2025, 37(1): 162 - 173. <a href='https://ieeexplore.ieee.org/abstract/document/10726790'>[Paper]</a> <a href='https://arxiv.org/pdf//2310.01038.pdf'>[Arxiv]</a> <a href='https://github.com/JiahaoWuGit/DConRec'>[Code]</a></span>
+            <span class="publication-venue"><b>IEEE Transactions on Knowledge and Data Engineering</b>, 2025, 37(1): 162 - 173. <a href='https://ieeexplore.ieee.org/abstract/document/10726790'>[Paper]</a> <a href='https://arxiv.org/pdf//2310.01038.pdf'>[Arxiv]</a> <a href='https://github.com/JiahaoWuGit/DConRec'>[Code]</a> <span class="publication-tag" data-tag="L2O">L2O</span> <span class="publication-tag" data-tag="Applications">Applications</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors">Xuanfeng Li, <b>Shengcai Liu*</b>, and Ke Tang.</span>
             <span class="publication-title">Novel Genetic Algorithm for Solving Chance-Constrained Multiple-Choice Knapsack Problems.</span>
-            <span class="publication-venue"><b>Journal of Computer Applications</b>, 2024, 44(5): 1378-1385. <a href='http://www.joca.cn/EN/Y2024/V44/I5/1378'>[Paper]</a></span>
+            <span class="publication-venue"><b>Journal of Computer Applications</b>, 2024, 44(5): 1378-1385. <a href='http://www.joca.cn/EN/Y2024/V44/I5/1378'>[Paper]</a> <span class="publication-tag" data-tag="Applications">Applications</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors">Xuanfeng Li, <b>Shengcai Liu*</b>, Jin Wang, Xiao Chen, Yew-Soon Ong, and Ke Tang.</span>
             <span class="publication-title">Chance-Constrained Multiple-Choice Knapsack Problem: Model, Algorithms, and Applications.</span>
-            <span class="publication-venue"><b>IEEE Transactions on Cybernetics</b>, 2024, 54(12): 7969 - 7980. <a href='https://ieeexplore.ieee.org/abstract/document/10549845'>[Paper]</a> <a href='https://arxiv.org/pdf//2306.14690.pdf'>[Arxiv]</a> <a href='https://github.com/eddylxf23/DDCCMCKP'>[Code]</a></span>
+            <span class="publication-venue"><b>IEEE Transactions on Cybernetics</b>, 2024, 54(12): 7969 - 7980. <a href='https://ieeexplore.ieee.org/abstract/document/10549845'>[Paper]</a> <a href='https://arxiv.org/pdf//2306.14690.pdf'>[Arxiv]</a> <a href='https://github.com/eddylxf23/DDCCMCKP'>[Code]</a> <span class="publication-tag" data-tag="L2O">L2O</span> <span class="publication-tag" data-tag="Applications">Applications</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors">Ning Lu, <b>Shengcai Liu*</b>, Rui He, Qi Wang, Yew-Soon Ong, and Ke Tang.</span>
             <span class="publication-title">Large Language Models can be Guided to Evade AI-Generated Text Detection.</span>
-            <span class="publication-venue"><b>Transactions on Machine Learning Research</b>, 2024. <a href='https://openreview.net/forum?id=lLE0mWzUrr'>[Paper]</a> <a href='https://arxiv.org/pdf/2305.10847.pdf'>[Arxiv]</a> <a href='https://github.com/ColinLu50/Evade-GPT-Detector'>[Code]</a></span>
+            <span class="publication-venue"><b>Transactions on Machine Learning Research</b>, 2024. <a href='https://openreview.net/forum?id=lLE0mWzUrr'>[Paper]</a> <a href='https://arxiv.org/pdf/2305.10847.pdf'>[Arxiv]</a> <a href='https://github.com/ColinLu50/Evade-GPT-Detector'>[Code]</a> <span class="publication-tag" data-tag="LLM/Agent">LLM/Agent</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors"><b>Shengcai Liu</b>, Ning Lu, Wenjing Hong, Chao Qian, and Ke Tang.</span>
             <span class="publication-title">Effective and Imperceptible Adversarial Textual Attack via Multi-objectivization.</span>
-            <span class="publication-venue"><b>ACM Transactions on Evolutionary Learning and Optimization</b>, 2024, 4(3): 16:1-16:23. <a href='https://dl.acm.org/doi/full/10.1145/3651166'>[Paper]</a> <a href='https://arxiv.org/pdf/2111.01528.pdf'>[Arxiv]</a> <a href='https://github.com/ColinLu50/HydraText'>[Code]</a></span>
+            <span class="publication-venue"><b>ACM Transactions on Evolutionary Learning and Optimization</b>, 2024, 4(3): 16:1-16:23. <a href='https://dl.acm.org/doi/full/10.1145/3651166'>[Paper]</a> <a href='https://arxiv.org/pdf/2111.01528.pdf'>[Arxiv]</a> <a href='https://github.com/ColinLu50/HydraText'>[Code]</a> <span class="publication-tag" data-tag="Applications">Applications</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors"><b>Shengcai Liu</b>, Yu Zhang, Ke Tang, and Xin Yao.</span>
             <span class="publication-title">How Good Is Neural Combinatorial Optimization? A Systematic Evaluation on the Traveling Salesman Problem.</span>
-            <span class="publication-venue"><b>IEEE Computational Intelligence Magazine</b>, 2023, 18(3): 14-28. <a href='https://ieeexplore.ieee.org/document/10188470'>[Paper]</a> <a href='https://arxiv.org/pdf/2209.10913.pdf'>[Arxiv]</a> <a href='https://github.com/yzhang-gh/benchmarking-tsp'>[Code]</a></span>
+            <span class="publication-venue"><b>IEEE Computational Intelligence Magazine</b>, 2023, 18(3): 14-28. <a href='https://ieeexplore.ieee.org/document/10188470'>[Paper]</a> <a href='https://arxiv.org/pdf/2209.10913.pdf'>[Arxiv]</a> <a href='https://github.com/yzhang-gh/benchmarking-tsp'>[Code]</a> <span class="publication-tag" data-tag="L2O">L2O</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors">Zeyu Dai, <b>Shengcai Liu*</b>, Qing Li, and Ke Tang.</span>
             <span class="publication-title">Saliency Attack: Towards Imperceptible Black-box Adversarial Attack.</span>
-            <span class="publication-venue"><b>ACM Transactions on Intelligent Systems and Technology</b>, 2023, 14(3): 1-20. <a href='https://dl.acm.org/doi/abs/10.1145/3582563'>[Paper]</a> <a href='https://arxiv.org/pdf/2206.01898.pdf'>[Arxiv]</a> <a href='https://github.com/Daizy97/SaliencyAttack'>[Code]</a></span>
+            <span class="publication-venue"><b>ACM Transactions on Intelligent Systems and Technology</b>, 2023, 14(3): 1-20. <a href='https://dl.acm.org/doi/abs/10.1145/3582563'>[Paper]</a> <a href='https://arxiv.org/pdf/2206.01898.pdf'>[Arxiv]</a> <a href='https://github.com/Daizy97/SaliencyAttack'>[Code]</a> <span class="publication-tag" data-tag="Applications">Applications</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors">Rui He, <b>Shengcai Liu*</b>, Shan He, and Ke Tang.</span>
             <span class="publication-title">Multi-Domain Active Learning: Literature Review and Comparative Study.</span>
-            <span class="publication-venue"><b>IEEE Transactions on Emerging Topics in Computational Intelligence</b>, 2023, 7(3): 791-804. <a href='https://ieeexplore.ieee.org/document/9942709'>[Paper]</a> <a href='https://arxiv.org/pdf/2106.13516.pdf'>[Arxiv]</a></span>
+            <span class="publication-venue"><b>IEEE Transactions on Emerging Topics in Computational Intelligence</b>, 2023, 7(3): 791-804. <a href='https://ieeexplore.ieee.org/document/9942709'>[Paper]</a> <a href='https://arxiv.org/pdf/2106.13516.pdf'>[Arxiv]</a> <span class="publication-tag" data-tag="Applications">Applications</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors"><b>Shengcai Liu</b>, Ning Lu, Cheng Chen, and Ke Tang.</span>
             <span class="publication-title">Efficient Combinatorial Optimization for Word-level Adversarial Textual Attack.</span>
-            <span class="publication-venue"><b>IEEE/ACM Transactions on Audio, Speech and Language Processing</b>, 2022, 30: 98-111. <a href='https://ieeexplore.ieee.org/document/9627642'>[Paper]</a> <a href='https://arxiv.org/pdf/2109.02229.pdf'>[Arxiv]</a> <a href='https://github.com/ColinLu50/NLP-Attack-LocalSearch'>[Code]</a></span>
+            <span class="publication-venue"><b>IEEE/ACM Transactions on Audio, Speech and Language Processing</b>, 2022, 30: 98-111. <a href='https://ieeexplore.ieee.org/document/9627642'>[Paper]</a> <a href='https://arxiv.org/pdf/2109.02229.pdf'>[Arxiv]</a> <a href='https://github.com/ColinLu50/NLP-Attack-LocalSearch'>[Code]</a> <span class="publication-tag" data-tag="Applications">Applications</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors"><b>Shengcai Liu</b>, Peng Yang, and Ke Tang.</span>
             <span class="publication-title">Approximately Optimal Construction of Parallel Algorithm Portfolios by Evolutionary Intelligence (in Chinese).</span>
-            <span class="publication-venue"><b>SCIENTIA SINICA Technologica</b>, 2023, 53(2): 280-290. <a href='https://www.sciengine.com/doi/pdf/A261B46B9197412FA1DC6CF196A5750E'>[Paper]</a></span>
+            <span class="publication-venue"><b>SCIENTIA SINICA Technologica</b>, 2023, 53(2): 280-290. <a href='https://www.sciengine.com/doi/pdf/A261B46B9197412FA1DC6CF196A5750E'>[Paper]</a> <span class="publication-tag" data-tag="L2O">L2O</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors"><b>Shengcai Liu</b>, Ke Tang, and Xin Yao.</span>
             <span class="publication-title">Generative Adversarial Construction of Parallel Portfolios.</span>
-            <span class="publication-venue"><b>IEEE Transactions on Cybernetics</b>, 2022, 52(2): 784-795. <a href='https://ieeexplore.ieee.org/abstract/document/9082022'>[Paper]</a></span>
+            <span class="publication-venue"><b>IEEE Transactions on Cybernetics</b>, 2022, 52(2): 784-795. <a href='https://ieeexplore.ieee.org/abstract/document/9082022'>[Paper]</a> <span class="publication-tag" data-tag="L2O">L2O</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors"><b>Shengcai Liu</b>, Ke Tang, and Xin Yao.</span>
             <span class="publication-title">Memetic Search for Vehicle Routing with Simultaneous Pickup-Delivery and Time Windows.</span>
-            <span class="publication-venue"><b>Swarm and Evolutionary Computation</b>, 66: 100927, 2021. <a href='https://www.sciencedirect.com/science/article/abs/pii/S2210650221000882'>[Paper]</a> <a href='https://arxiv.org/pdf/2011.06331.pdf'>[Arxiv]</a> <a href='https://github.com/senshineL/VRPenstein'>[Code]</a></span>
+            <span class="publication-venue"><b>Swarm and Evolutionary Computation</b>, 66: 100927, 2021. <a href='https://www.sciencedirect.com/science/article/abs/pii/S2210650221000882'>[Paper]</a> <a href='https://arxiv.org/pdf/2011.06331.pdf'>[Arxiv]</a> <a href='https://github.com/senshineL/VRPenstein'>[Code]</a> <span class="publication-tag" data-tag="Applications">Applications</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors"><b>Shengcai Liu</b>, Ke Tang, Peng Yang, and Xin Yao.</span>
             <span class="publication-title">Few-shots Parallel Algorithm Portfolio Construction via Co-evolution.</span>
-            <span class="publication-venue"><b>IEEE Transactions on Evolutionary Computation</b>, 2021, 25(3): 595-607. <a href='https://ieeexplore.ieee.org/document/9354852/'>[Paper]</a> <a href='https://arxiv.org/pdf/2007.00501.pdf'>[Arxiv]</a> <a href='https://github.com/senshineL/CEPS'>[Code]</a></span>
+            <span class="publication-venue"><b>IEEE Transactions on Evolutionary Computation</b>, 2021, 25(3): 595-607. <a href='https://ieeexplore.ieee.org/document/9354852/'>[Paper]</a> <a href='https://arxiv.org/pdf/2007.00501.pdf'>[Arxiv]</a> <a href='https://github.com/senshineL/CEPS'>[Code]</a> <span class="publication-tag" data-tag="L2O">L2O</span></span>
         </li>
         
     </ol>
+    </div>
     
-    <p class="section-group-title"><strong>Conference Papers</strong></p>
+    <div class="publication-group">
+    <p class="section-group-title publication-group-title">
+        <button class="publication-toggle" type="button" aria-expanded="true" aria-label="Toggle Conference Papers">
+            <span class="publication-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <strong>Conference Papers</strong>
+    </p>
     <ol class="publication-list">
+        
+        <li class="publication-item">
+            <span class="publication-authors">Jiyu Luo, Shaoyu Chen, Jingwei Sun, <b>Shengcai Liu</b>, Ke Tang, Guangzhong Sun.</span>
+            <span class="publication-title">EMO: Energy Efficiency Modeling and Optimization for AI Workloads.</span>
+            <span class="publication-venue">In: <b>Proceedings of The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC'2026)</b>, Chicago, IL, Nov 15 - 20, 2026, To appear. <span class="publication-tag" data-tag="L2O">L2O</span> <span class="publication-tag" data-tag="LLM/Agent">LLM/Agent</span></span>
+        </li>
         
         <li class="publication-item">
             <span class="publication-authors">Zubin Zheng, Jiahao Wu, <b>Shengcai Liu*</b>.</span>
             <span class="publication-title">Neural QAOA<sup>2</sup>: Differentiable Joint Graph Partitioning and Parameter Initialization for Quantum Combinatorial Optimization.</span>
-            <span class="publication-venue">In: <b>Proceedings of the 43rd International Conference on Machine Learning (ICML'2026)</b>, Seoul, South Korea, Jul 6 - 11, 2026.</span>
+            <span class="publication-venue">In: <b>Proceedings of the 43rd International Conference on Machine Learning (ICML'2026)</b>, Seoul, South Korea, Jul 6 - 11, 2026. <span class="publication-tag" data-tag="L2O">L2O</span> <span class="publication-tag" data-tag="Quantum">Quantum</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors">Zhangying Feng, Qianglong Chen, Ning Lu, Yongqian Li, Siqi Cheng, Shuangmu Peng, Duyu Tang, <b>Shengcai Liu*</b>, Zhirui Zhang*.</span>
             <span class="publication-title">Is PRM Necessary? Problem-Solving RL Implicitly Induces PRM Capability in LLMs.</span>
-            <span class="publication-venue">In: <b>Proceedings of the 39th Annual Conference on Neural Information Processing Systems (NeurIPS'2025)</b>, San Diego, CA, Nov 30 - Dec 7, 2025. <a href='https://openreview.net/forum?id=ooiHIklvN5'>[Paper]</a> <a href='https://arxiv.org/abs/2505.11227.pdf'>[Arxiv]</a></span>
+            <span class="publication-venue">In: <b>Proceedings of the 39th Annual Conference on Neural Information Processing Systems (NeurIPS'2025)</b>, San Diego, CA, Nov 30 - Dec 7, 2025. <a href='https://openreview.net/forum?id=ooiHIklvN5'>[Paper]</a> <a href='https://arxiv.org/abs/2505.11227.pdf'>[Arxiv]</a> <span class="publication-tag" data-tag="LLM/Agent">LLM/Agent</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors">Haoze Lv, Zhiyuan Wang, Wenjie Chen, <b>Shengcai Liu*</b>.</span>
             <span class="publication-title">Cascaded Large-Scale TSP Solving with Unified Neural Guidance: Bridging Local and Population-based Search.</span>
-            <span class="publication-venue">In: <b>Proceedings of the 28th European Conference on Artificial Intelligence (ECAI'2025)</b>, Bologna, Italy, Oct 25 - 30, 2025, 4961-4968. <a href='https://ebooks.iospress.nl/volumearticle/76344'>[Paper]</a> <a href='https://arxiv.org/abs/2501.14285'>[Arxiv]</a></span>
+            <span class="publication-venue">In: <b>Proceedings of the 28th European Conference on Artificial Intelligence (ECAI'2025)</b>, Bologna, Italy, Oct 25 - 30, 2025, 4961-4968. <a href='https://ebooks.iospress.nl/volumearticle/76344'>[Paper]</a> <a href='https://arxiv.org/abs/2501.14285'>[Arxiv]</a> <span class="publication-tag" data-tag="L2O">L2O</span> <span class="publication-tag" data-tag="Applications">Applications</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors">Ning Lu, <b>Shengcai Liu*</b>, Jiahao Wu, Weiyu Chen, Zhirui Zhang, Yew-Soon Ong, Qi Wang, Ke Tang.</span>
             <span class="publication-title">Safe Delta: Consistently Preserving Safety when Fine-Tuning LLMs on Diverse Datasets.</span>
-            <span class="publication-venue">In: <b>Proceedings of the 42nd International Conference on Machine Learning (ICML'2025)</b>, Vancouver, Canada, Jul 13 - 19, 2025. <a href='https://openreview.net/forum?id=QsCDgFKErb'>[Paper]</a> <a href='https://arxiv.org/abs/2505.12038'>[Arxiv]</a> <a href='https://github.com/ColinLu50/SafeDelta'>[Code]</a></span>
+            <span class="publication-venue">In: <b>Proceedings of the 42nd International Conference on Machine Learning (ICML'2025)</b>, Vancouver, Canada, Jul 13 - 19, 2025. <a href='https://openreview.net/forum?id=QsCDgFKErb'>[Paper]</a> <a href='https://arxiv.org/abs/2505.12038'>[Arxiv]</a> <a href='https://github.com/ColinLu50/SafeDelta'>[Code]</a> <span class="publication-tag" data-tag="LLM/Agent">LLM/Agent</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors">Jiahao Wu, Ning Lu, Zeiyu Dai, Wenqi Fan, <b>Shengcai Liu*</b>, Qing Li, Ke Tang.</span>
             <span class="publication-title">Backdoor Graph Condensation.</span>
-            <span class="publication-venue">In: <b>Proceedings of The 40th IEEE International Conference on Data Engineering (ICDE'2025)</b>, HongKong, China, May 19 - 23, 2025, 2267-2280. <a href='https://ieeexplore.ieee.org/abstract/document/11113161/'>[Paper]</a> <a href='https://arxiv.org/pdf/2407.11025'>[Arxiv]</a> <a href='https://github.com/JiahaoWuGit/BGC'>[Code]</a></span>
+            <span class="publication-venue">In: <b>Proceedings of The 40th IEEE International Conference on Data Engineering (ICDE'2025)</b>, HongKong, China, May 19 - 23, 2025, 2267-2280. <a href='https://ieeexplore.ieee.org/abstract/document/11113161/'>[Paper]</a> <a href='https://arxiv.org/pdf/2407.11025'>[Arxiv]</a> <a href='https://github.com/JiahaoWuGit/BGC'>[Code]</a> <span class="publication-tag" data-tag="Applications">Applications</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors">Jiahao Wu, Qujiong Liu, Hengchang Hu, Wenqi Fan, <b>Shengcai Liu*</b>, Qing Li, Xiao-Ming Wu, Ke Tang.</span>
             <span class="publication-title">Leveraging ChatGPT to Empower Training-free Dataset Condensation for Content based Recommendation.</span>
-            <span class="publication-venue">In: <b>Companion Proceedings of the ACM on Web Conference 2025 (WWW'2025)</b>, Sydney, Australia, Apr 28 - May 2, 2025, 1402-1406. <a href='https://dl.acm.org/doi/abs/10.1145/3701716.3715555'>[Paper]</a> <a href='https://arxiv.org/pdf/2310.09874'>[Arxiv]</a> <a href='https://github.com/Jyonn/TF-DCon'>[Code]</a></span>
+            <span class="publication-venue">In: <b>Companion Proceedings of the ACM on Web Conference 2025 (WWW'2025)</b>, Sydney, Australia, Apr 28 - May 2, 2025, 1402-1406. <a href='https://dl.acm.org/doi/abs/10.1145/3701716.3715555'>[Paper]</a> <a href='https://arxiv.org/pdf/2310.09874'>[Arxiv]</a> <a href='https://github.com/Jyonn/TF-DCon'>[Code]</a> <span class="publication-tag" data-tag="LLM/Agent">LLM/Agent</span> <span class="publication-tag" data-tag="Applications">Applications</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors">Ning Lu, <b>Shengcai Liu*</b>, Zhirui Zhang, Qi Wang, Haifeng Liu, and Ke Tang.</span>
             <span class="publication-title">Less is More: Understanding Word-level Textual Adversarial Attack via n-gram Frequency Descend.</span>
-            <span class="publication-venue">In: <b>Proceedings of The 2024 IEEE Conference on Artificial Intelligence (CAI'2024)</b>, Singapore, Singapore, Jun 25 - 27, 2024, 823-830. <a href='https://ieeexplore.ieee.org/abstract/document/10605391'>[Paper]</a> <a href='https://arxiv.org/pdf/2302.02568.pdf'>[Arxiv]</a></span>
+            <span class="publication-venue">In: <b>Proceedings of The 2024 IEEE Conference on Artificial Intelligence (CAI'2024)</b>, Singapore, Singapore, Jun 25 - 27, 2024, 823-830. <a href='https://ieeexplore.ieee.org/abstract/document/10605391'>[Paper]</a> <a href='https://arxiv.org/pdf/2302.02568.pdf'>[Arxiv]</a> <span class="publication-tag" data-tag="Applications">Applications</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors"><b>Shengcai Liu</b>, Caishun Chen, Xinghua Qu, Ke Tang, and Yew-Soon Ong.</span>
             <span class="publication-title">Large Language Models as Evolutionary Optimizers.</span>
-            <span class="publication-venue">In: <b>Proceedings of The 2024 IEEE Congress on Evolutionary Computation (CEC'2024)</b>, Yokohama, Japan, Jun 30 - Jul 5, 2024, 1-8. <a href='https://ieeexplore.ieee.org/abstract/document/10611913'>[Paper]</a> <a href='https://arxiv.org/pdf/2310.19046.pdf'>[Arxiv]</a> <a href='https://github.com/cschen1205/LMEA'>[Code]</a></span>
+            <span class="publication-venue">In: <b>Proceedings of The 2024 IEEE Congress on Evolutionary Computation (CEC'2024)</b>, Yokohama, Japan, Jun 30 - Jul 5, 2024, 1-8. <a href='https://ieeexplore.ieee.org/abstract/document/10611913'>[Paper]</a> <a href='https://arxiv.org/pdf/2310.19046.pdf'>[Arxiv]</a> <a href='https://github.com/cschen1205/LMEA'>[Code]</a> <span class="publication-tag" data-tag="L2O">L2O</span> <span class="publication-tag" data-tag="LLM/Agent">LLM/Agent</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors">Rui He, <b>Shengcai Liu*</b>, Jiahao Wu, Shan He, and Ke Tang.</span>
             <span class="publication-title">Multi-Domain Learning From Insufficient Annotations.</span>
-            <span class="publication-venue">In: <b>Proceedings of The 26th European Conference on Artificial Intelligence (ECAI'2023)</b>, Kraków, Poland, Sep 30 - Oct 4, 2023, 1028-1035. <a href='https://ebooks.iospress.nl/doi/10.3233/FAIA230375'>[Paper]</a> <a href='https://arxiv.org/pdf/2305.02757.pdf'>[Arxiv]</a></span>
+            <span class="publication-venue">In: <b>Proceedings of The 26th European Conference on Artificial Intelligence (ECAI'2023)</b>, Kraków, Poland, Sep 30 - Oct 4, 2023, 1028-1035. <a href='https://ebooks.iospress.nl/doi/10.3233/FAIA230375'>[Paper]</a> <a href='https://arxiv.org/pdf/2305.02757.pdf'>[Arxiv]</a> <span class="publication-tag" data-tag="Applications">Applications</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors"><b>Shengcai Liu</b>, Fu Peng, and Ke Tang.</span>
             <span class="publication-title">Reliable Robustness Evaluation via Automatically Constructed Attack Ensembles.</span>
-            <span class="publication-venue">In: <b>Proceedings of The 37th AAAI Conference on Artificial Intelligence (AAAI'2023)</b>, Washington, DC, Feb 7 - 14, 2023, 8852-8860. <a href='https://ojs.aaai.org/index.php/AAAI/article/view/26064/25836'>[Paper]</a> <a href='https://arxiv.org/pdf/2211.12713.pdf'>[Arxiv]</a> <a href='https://github.com/LeegerPENG/AutoAE'>[Code]</a></span>
+            <span class="publication-venue">In: <b>Proceedings of The 37th AAAI Conference on Artificial Intelligence (AAAI'2023)</b>, Washington, DC, Feb 7 - 14, 2023, 8852-8860. <a href='https://ojs.aaai.org/index.php/AAAI/article/view/26064/25836'>[Paper]</a> <a href='https://arxiv.org/pdf/2211.12713.pdf'>[Arxiv]</a> <a href='https://github.com/LeegerPENG/AutoAE'>[Code]</a> <span class="publication-tag" data-tag="L2O">L2O</span> <span class="publication-tag" data-tag="Applications">Applications</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors">Fu Peng, <b>Shengcai Liu*</b>, and Ke Tang.</span>
             <span class="publication-title">Training Quantized Deep Neural Networks via Cooperative Coevolution.</span>
-            <span class="publication-venue">In: <b>Proceedings of the 13th International Conference on Swarm Intelligence (ICSI'2022)</b>, Xi'an, China, Jul 15 - 19, 2022, 81-93. <a href='https://arxiv.org/pdf/2112.14834.pdf'>[Paper]</a></span>
+            <span class="publication-venue">In: <b>Proceedings of the 13th International Conference on Swarm Intelligence (ICSI'2022)</b>, Xi'an, China, Jul 15 - 19, 2022, 81-93. <a href='https://arxiv.org/pdf/2112.14834.pdf'>[Paper]</a> <span class="publication-tag" data-tag="Applications">Applications</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors">Kangfei Zhao, <b>Shengcai Liu*</b>, Yu Rong, and Jeffrey Xu Yu.</span>
             <span class="publication-title">Towards Feature-free TSP Solver Selection: A Deep Learning Approach.</span>
-            <span class="publication-venue">In: <b>Proceedings of the 20th International Joint Conference on Neural Networks (IJCNN'2021)</b>, Virtual Event, Jul 18 - 22, 2021, 1-8. <a href='https://ieeexplore.ieee.org/abstract/document/9533538'>[Paper]</a> <a href='https://arxiv.org/pdf/2006.00715.pdf'>[Arxiv]</a> <a href='https://github.com/Kangfei/TSPSelector'>[Code]</a></span>
+            <span class="publication-venue">In: <b>Proceedings of the 20th International Joint Conference on Neural Networks (IJCNN'2021)</b>, Virtual Event, Jul 18 - 22, 2021, 1-8. <a href='https://ieeexplore.ieee.org/abstract/document/9533538'>[Paper]</a> <a href='https://arxiv.org/pdf/2006.00715.pdf'>[Arxiv]</a> <a href='https://github.com/Kangfei/TSPSelector'>[Code]</a> <span class="publication-tag" data-tag="L2O">L2O</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors"><b>Shengcai Liu</b>, Ke Tang, and Xin Yao.</span>
             <span class="publication-title">On Performance Estimation in Automatic Algorithm Configuration.</span>
-            <span class="publication-venue">In: <b>Proceedings of The 34th AAAI Conference on Artificial Intelligence (AAAI'2020)</b>, New York, NY, Feb 7 - 12, 2020, 2384-2391. <a href='https://ojs.aaai.org/index.php/AAAI/article/view/5618'>[Paper]</a></span>
+            <span class="publication-venue">In: <b>Proceedings of The 34th AAAI Conference on Artificial Intelligence (AAAI'2020)</b>, New York, NY, Feb 7 - 12, 2020, 2384-2391. <a href='https://ojs.aaai.org/index.php/AAAI/article/view/5618'>[Paper]</a> <span class="publication-tag" data-tag="L2O">L2O</span></span>
         </li>
         
         <li class="publication-item">
             <span class="publication-authors"><b>Shengcai Liu</b>, Ke Tang, and Xin Yao.</span>
             <span class="publication-title">Automatic Construction of Parallel Portfolios via Explicit Instance Grouping.</span>
-            <span class="publication-venue">In: <b>Proceedings of The 33rd AAAI Conference on Artificial Intelligence (AAAI'2019)</b>, Honululu, HI, Jan 27 - Feb 1, 2019, 1560-1567. <a href='https://ojs.aaai.org/index.php/AAAI/article/view/3970'>[Paper]</a></span>
-        </li>
-        
-        <li class="publication-item">
-            <span class="publication-authors"><b>Shengcai Liu</b>, Yufan Wei, Ke Tang, A.K. Qin, and Xin Yao.</span>
-            <span class="publication-title">Qos-aware Long-Term Based Service Composition in Cloud Computing.</span>
-            <span class="publication-venue">In: <b>Proceedings of The 14th IEEE Congress on Evolutionary Computation (CEC'2015)</b>, Sendai, Japan, May 25 - 28, 2015, 3362-3369. <a href='https://ieeexplore.ieee.org/abstract/document/7257311'>[Paper]</a></span>
+            <span class="publication-venue">In: <b>Proceedings of The 33rd AAAI Conference on Artificial Intelligence (AAAI'2019)</b>, Honululu, HI, Jan 27 - Feb 1, 2019, 1560-1567. <a href='https://ojs.aaai.org/index.php/AAAI/article/view/3970'>[Paper]</a> <span class="publication-tag" data-tag="L2O">L2O</span></span>
         </li>
         
     </ol>
+    </div>
     
 
     
@@ -870,6 +1034,8 @@
         <li class="activity-item">
             <p class="activity-category">Invited Talks:</p>
             <ul class="activity-content">
+                
+                <li>“Learn to Optimize - An Algorithm Space Distillation Perspective”, 计算智能与学习优化交流会, 2026年6月29日, 北京航空航天大学.</li>
                 
                 <li>“优化算法的自动生成”, 2025湖南人工智能大会-智能系统与优化论坛, 2025年11月22日, 湘潭.</li>
                 
@@ -984,9 +1150,23 @@
 
             <!-- 2. Last Updated 部分 -->
             <!-- 使用 Python (build.py) 传入的 build_date 变量 -->
-            &copy; Shengcai LIU. Last updated: 2026-05-08.
+            &copy; Shengcai LIU. Last updated: 2026-07-04.
         </p>
     </div>
+    <script type="text/javascript">
+        document.querySelectorAll('.publication-toggle').forEach(function (button) {
+            button.addEventListener('click', function () {
+                var group = button.closest('.publication-group');
+                var list = group ? group.querySelector('.publication-list') : null;
+                if (!group || !list) {
+                    return;
+                }
+                var collapsed = group.classList.toggle('is-collapsed');
+                list.hidden = collapsed;
+                button.setAttribute('aria-expanded', String(!collapsed));
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -50,6 +50,7 @@
         body>blockquote,
         body>ul,
         body>ol,
+        .publication-group,
         #nav_bar,
         .page-footer {
             width: min(var(--content-width), calc(100% - (2 * var(--page-gutter))));
@@ -197,6 +198,53 @@
             font-weight: 400;
         }
 
+        .publication-group-title {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .publication-group-title strong {
+            font-size: 17px;
+            font-weight: 660;
+            line-height: 1.35;
+        }
+
+        .publication-toggle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            padding: 0;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        .publication-toggle:hover,
+        .publication-toggle:focus-visible {
+            border-color: #d8dee7;
+            background: #f8fafc;
+            outline: none;
+        }
+
+        .publication-toggle-icon {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-left: 6px solid var(--muted-color);
+            transform: rotate(90deg);
+            transition: transform 0.15s ease;
+        }
+
+        .publication-group.is-collapsed .publication-toggle-icon {
+            transform: rotate(0deg);
+        }
+
         #nav_bar {
             clear: none;
             float: none;
@@ -316,6 +364,8 @@
 
         .publication-list {
             margin-top: 4px;
+            margin-bottom: 24px;
+            padding-left: 24px;
         }
 
         .publication-item {
@@ -334,6 +384,52 @@
             color: var(--heading-color);
             font-weight: 630;
             line-height: 1.45;
+        }
+
+        .publication-tag {
+            display: inline-block;
+            margin-left: 5px;
+            padding: 1px 5px;
+            border: 1px solid #d8dee7;
+            border-radius: 999px;
+            background: #f8fafc;
+            color: #6b7280;
+            font-size: 10px;
+            line-height: 1.35;
+            font-weight: 500;
+            letter-spacing: 0;
+            vertical-align: 0.08em;
+            white-space: nowrap;
+        }
+
+        .publication-tag[data-tag="L2O"] {
+            border-color: #cfd8e6;
+            background: #f7f9fc;
+            color: #53657d;
+        }
+
+        .publication-tag[data-tag="LLM/Agent"] {
+            border-color: #c8ddcf;
+            background: #f6fbf7;
+            color: #4f705a;
+        }
+
+        .publication-tag[data-tag="Applications"] {
+            border-color: #e1d5c5;
+            background: #fbf8f2;
+            color: #765f45;
+        }
+
+        .publication-tag[data-tag="Quantum"] {
+            border-color: #d0dce4;
+            background: #f6fafc;
+            color: #4f6a79;
+        }
+
+        .publication-tag[data-tag="Material"] {
+            border-color: #e2d7cb;
+            background: #fbf8f3;
+            color: #755f4a;
         }
 
         .publication-venue {
@@ -595,16 +691,23 @@
 
     {% elif section.type == 'publications' %}
     {% for group in section.groups %}
-    <p class="section-group-title"><strong>{{ group.title }}</strong></p>
+    <div class="publication-group">
+    <p class="section-group-title publication-group-title">
+        <button class="publication-toggle" type="button" aria-expanded="true" aria-label="Toggle {{ group.title }}">
+            <span class="publication-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <strong>{{ group.title }}</strong>
+    </p>
     <ol class="publication-list">
         {% for paper in group.entries %}
         <li class="publication-item">
             <span class="publication-authors">{{ paper.authors }}.</span>
             <span class="publication-title">{{ paper.title }}.</span>
-            <span class="publication-venue">{{ paper.venue }}</span>
+            <span class="publication-venue">{{ paper.venue }}{% if paper.tags %}{% for tag in paper.tags %} <span class="publication-tag" data-tag="{{ tag }}">{{ tag }}</span>{% endfor %}{% elif paper.tag %} <span class="publication-tag" data-tag="{{ paper.tag }}">{{ paper.tag }}</span>{% endif %}</span>
         </li>
         {% endfor %}
     </ol>
+    </div>
     {% endfor %}
 
     {% elif section.type == 'activities' %}
@@ -668,6 +771,20 @@
             &copy; {{ profile.name_en }}. Last updated: {{ build_date }}.
         </p>
     </div>
+    <script type="text/javascript">
+        document.querySelectorAll('.publication-toggle').forEach(function (button) {
+            button.addEventListener('click', function () {
+                var group = button.closest('.publication-group');
+                var list = group ? group.querySelector('.publication-list') : null;
+                if (!group || !list) {
+                    return;
+                }
+                var collapsed = group.classList.toggle('is-collapsed');
+                list.hidden = collapsed;
+                button.setAttribute('aria-expanded', String(!collapsed));
+            });
+        });
+    </script>
 </body>
 
 </html>
