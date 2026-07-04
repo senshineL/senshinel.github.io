@@ -127,7 +127,7 @@ sections:
       - title: "Journal Papers"
         entries: # 原 items 改为 entries
           - authors: "<b>Shengcai Liu</b>, Zhiyuan Wang, Yew-Soon Ong, Xin Yao, and Ke Tang"
-            title: "Learning Mixture-of-Experts for General-Purpose Black-Box Discrete Optimization"
+            title: "MEGO: Learning Mixture-of-Experts for General-Purpose Binary Optimization"
             tags: ["L2O"]
             venue: "<b>IEEE Transactions on Pattern Analysis and Machine Intelligence</b>, 2026, To appear. <a href='https://arxiv.org/pdf//2405.18884.pdf'>[Arxiv]</a>"
           - authors: "Qingya Li, <b>Shengcai Liu*</b>, Juan Zou, and Ke Tang"
