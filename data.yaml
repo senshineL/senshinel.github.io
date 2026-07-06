@@ -138,7 +138,7 @@ sections:
             title: "Memetic Search for Green Vehicle Routing Problem with Private Capacitated Refueling Stations"
             tags: ["Applications"]
             venue: "<b>IEEE Transactions on Evolutionary Computation</b>, 2025, To appear. <a href='https://ieeexplore.ieee.org/abstract/document/11271862'>[Paper]</a> <a href='https://arxiv.org/pdf//2504.04527.pdf'>[Arxiv]</a> <a href='https://github.com/FXBZ-research/METS-Algorithm'>[Code]</a>"
-          - authors: "Zhiyuan Wang, <b>Shengcai Liu*</b>, Peng Yang, and Ke Tang"
+          - authors: "Zhiyuan Wang, <b>Shengcai Liu*</b>, Peng Yang, and Ke Tang*"
             title: "Evolving Generalizable Parallel Algorithm Portfolios for Binary Optimization Problems via Domain-Agnostic Instance Generation"
             tags: ["L2O"]
             venue: "<b>IEEE Transactions on Evolutionary Computation</b>, 2025, To appear. <a href='https://ieeexplore.ieee.org/abstract/document/11261396'>[Paper]</a> <a href='https://arxiv.org/pdf//2501.02906.pdf'>[Arxiv]</a> <a href='https://github.com/MetaronWang/DACE'>[Code]</a>"
@@ -204,7 +204,7 @@ sections:
             venue: "<b>IEEE Transactions on Evolutionary Computation</b>, 2021, 25(3): 595-607. <a href='https://ieeexplore.ieee.org/document/9354852/'>[Paper]</a> <a href='https://arxiv.org/pdf/2007.00501.pdf'>[Arxiv]</a> <a href='https://github.com/senshineL/CEPS'>[Code]</a>"
       - title: "Conference Papers"
         entries: # 原 items 改为 entries
-          - authors: "Jiyu Luo, Shaoyu Chen, Jingwei Sun, <b>Shengcai Liu</b>, Ke Tang, Guangzhong Sun"
+          - authors: "Jiyu Luo, Shaoyu Chen, Jingwei Sun*, <b>Shengcai Liu*</b>, Ke Tang, Guangzhong Sun*"
             title: "EMO: Energy Efficiency Modeling and Optimization for AI Workloads"
             tags: ["L2O", "LLM/Agent"]
             venue: "In: <b>Proceedings of The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC'2026)</b>, Chicago, IL, Nov 15 - 20, 2026, To appear."
