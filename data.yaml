@@ -312,8 +312,8 @@ sections:
     nav_label: "[Teaching]"
     header_title: "Teaching"
     type: "simple_list"
-    entries: # 原 items 改为 entries
-      - "CSE5025 - Combinatorial Optimization (组合优化), for graduate students, 2025 Fall"
+    entries:
+      - "CSE5025 - Combinatorial Optimization (组合优化), for graduate students, 2025 Fall, 2026 Fall"
       - "CS109 - Introduction to Java Programming, for undergraduate students, 2024 Fall, 2026 Spring"
 footer:
   show_visitor_count: true
