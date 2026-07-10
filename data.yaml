@@ -38,6 +38,8 @@ sections:
         <br><br>
         <strong>Recruitment</strong>: We have open positions for M.Sc./Ph.D. students, Visiting Scholars, Postdocs, and Research Assistant Professors. Candidates with strong backgrounds in mathematics and programming are highly encouraged to apply.
         To Apply: Please email your CV, transcripts, and personal statement to liusc3 AT sustech.edu.cn and chengy6 AT mail.sustech.edu.cn. Subject Line: Name + Position Applied / Intake Year.
+        <br><br>
+        <a class='application-note-link' href='before-you-apply.html'>Before You Apply: Things You Must Know（在你申请之前你必须知道的事）</a>
 
   - id: "tag_projects"
     nav_label: "[Grants & Awards]"
