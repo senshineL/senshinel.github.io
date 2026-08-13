@@ -89,18 +89,18 @@ sections:
       - title: "Preprints"
         note: "(First/corresponding-authored works listed; * indicates corresponding author; See <a href='https://scholar.google.com/citations?user=tV0nV3oAAAAJ&hl=en'>Google Scholar</a> for the complete list.)"
         entries:
-          - authors: "Shaofeng Zhang, <b>Shengcai Liu*</b>, Zhiyuan Wang, Ke Tang"
+          - authors: "Shaofeng Zhang, <b>Shengcai Liu*</b>, Zhiyuan Wang, Ke Tang*"
             title: "Evolving Parallel Algorithm Portfolios via Potential-Aware Instance Generation with LLMs"
             tags: ["L2O", "LLM/Agent"]
             venue: "arXiv preprint arXiv:2608.06808. <a href='https://arxiv.org/abs/2608.06808'>[Arxiv]</a>"
-          - authors: "Tianhang Lu, Runtian Ren, <b>Shengcai Liu*</b>"
-            title: "Online Multi-Level Aggregation with Per-Batch Maximum Delay"
-            tags: ["L2O"]
-            venue: "arXiv preprint arXiv:2608.06796. <a href='https://arxiv.org/abs/2608.06796'>[Arxiv]</a>"
           - authors: "Haoze Lv, Ning Lu, <b>Shengcai Liu*</b>, Shaofeng Zhang, Ke Tang"
             title: "MuEvo: LLM-Driven Evolution of Multi-Heuristic Ensemble"
             tags: ["L2O", "LLM/Agent"]
             venue: "arXiv preprint arXiv:2608.03636. <a href='https://arxiv.org/abs/2608.03636'>[Arxiv]</a>"
+          - authors: "Tianhang Lu, Runtian Ren, <b>Shengcai Liu*</b>"
+            title: "Online Multi-Level Aggregation with Per-Batch Maximum Delay"
+            tags: ["L2O"]
+            venue: "arXiv preprint arXiv:2608.06796. <a href='https://arxiv.org/abs/2608.06796'>[Arxiv]</a>"
           - authors: "Tianhang Lu, Runtian Ren, <b>Shengcai Liu*</b>, Ke Tang"
             title: "Learning-Augmented and Randomized Algorithms for Line Aggregation with Delays"
             tags: ["L2O"]
