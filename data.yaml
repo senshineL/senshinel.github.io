@@ -22,6 +22,17 @@ biography:
 # 核心内容区块
 # ==========================================
 sections:
+  - id: "tag_news"
+    nav_label: "[Recent News]"
+    header_title: "Recent News"
+    type: "simple_list"
+    entries:
+      - "<b>Aug 2026:</b> I have been invited to give a talk, “Algorithm Space Distillation - A Perspective for Automated Algorithm Design,” at the 12th Workshop on Evolutionary Computation and Learning (ECOLE 2026)."
+      - "<b>Aug 2026:</b> I have been invited to serve as an Associate Editor of <a href='https://cis.ieee.org/publications/t-emerging-topics-in-ci'>IEEE Transactions on Emerging Topics in Computational Intelligence</a>."
+      - "<b>Oct 2025:</b> I started an LLM post-training research collaboration with Huawei as the principal investigator."
+      - "<b>Aug 2025:</b> My NSFC Young Scientists Fund (Category C) project was approved."
+      - "<b>Jul 2025:</b> I become an adjunct Ph.D. supervisor at Beijing Zhongguancun Academy."
+
   - id: "tag_ri"
     nav_label: "[Research Interests]"
     header_title: "Research Interests"
@@ -299,6 +310,7 @@ sections:
           - "IEEE Member (2022-)"
       - category: "Invited Talks:"
         content:
+          - “Algorithm Space Distillation - A Perspective for Automated Algorithm Design”, 第十二届演化计算与学习研讨会 (The 12th Workshop on Evolutionary Computation and Learning, ECOLE’2026), 2026年8月17日, 南京.
           - “Learn to Optimize - An Algorithm Space Distillation Perspective”, 计算智能与学习优化交流会, 2026年6月29日, 北京航空航天大学.
           - “优化算法的自动生成”, 2025湖南人工智能大会-智能系统与优化论坛, 2025年11月22日, 湘潭.
           - “Some Preliminary Attempts on LLM-Driven Optimization and Optimization for LLMs”, 第4届智能决策论坛, 2025年6月15日, 南京.
@@ -309,8 +321,8 @@ sections:
           - “Co-Evolved Parallel Algorithm Portfolios”, 第七届演化计算与学习研讨会 (The 7th Workshop on Evolutionary Computation and Learning, ECOLE’2021), 2021年5月15日, 武汉.
 
   - id: "tag_students"
-    nav_label: "[People]"
-    header_title: "People"
+    nav_label: "[People & Alumni]"
+    header_title: "People & Alumni"
     type: "simple_list_grouped"
     groups:
       - title: "Postdoctoral Researchers"
@@ -327,6 +339,11 @@ sections:
           - "2026 - : Linran Zhong 钟林然"
           - "2025 - : Zubin Zheng 郑祖彬"
           - "2025 - : Zhucai Duan 段柱材 (joint M.Sc. program with Ping An Technology)"
+      - title: "Alumni"
+        entries:
+          - "2021 - 2026: <a href='https://colinlu50.github.io'>Ning Lu 卢宁</a>, Ph.D. student (co-supervised with Prof. Ke Tang and Prof. Qi Wang). Next position / 去向: Bailing LLM Post-Training Team, Ant Group (Ant Star-Plan A Talent Program) / 蚂蚁集团百灵大模型后训练组（蚂蚁星-PlanA人才计划）"
+          - "2020 - 2026: Jiahao Wu 吴嘉豪, Ph.D. student (co-supervised with Prof. Ke Tang). Next position / 去向: Postdoctoral Researcher, The Hong Kong Polytechnic University / 香港理工大学博士后"
+          - "2020 - 2026: Xuanfeng Li 李炫锋, Ph.D. student (co-supervised with Prof. Ke Tang). Next position / 去向: Postdoctoral Researcher, Harbin Institute of Technology, Shenzhen / 哈尔滨工业大学（深圳）博士后"
 
   - id: "tag_teaching"
     nav_label: "[Teaching]"

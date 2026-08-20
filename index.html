@@ -270,9 +270,9 @@
 
         #nav_bar ul {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             justify-content: center;
-            gap: 4px 10px;
+            gap: 2px 4px;
             margin: 0;
             padding: 8px 0;
             list-style: none;
@@ -291,14 +291,15 @@
         #nav_bar ul li a {
             display: block;
             margin: 0;
-            padding: 6px 8px;
+            padding: 6px 4px;
             background: transparent;
             text-decoration: none;
             color: var(--link-color);
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 500;
             font-family: inherit;
             border-radius: 4px;
+            white-space: nowrap;
         }
 
         #nav_bar ul li a:hover {
@@ -570,6 +571,7 @@
             }
 
             #nav_bar ul {
+                flex-wrap: wrap;
                 gap: 2px 6px;
                 padding: 6px 0;
             }
@@ -638,6 +640,10 @@
         <ul>
             
             <li class="first" >
+                <a href="#tag_news">[Recent News]</a>
+            </li>
+            
+            <li >
                 <a href="#tag_ri">[Research Interests]</a>
             </li>
             
@@ -654,7 +660,7 @@
             </li>
             
             <li >
-                <a href="#tag_students">[People]</a>
+                <a href="#tag_students">[People & Alumni]</a>
             </li>
             
             <li >
@@ -663,6 +669,30 @@
             
         </ul>
     </div>
+
+    
+
+    <h3 id="tag_news">
+        Recent News
+    </h3>
+
+    
+
+    
+    <ul>
+        
+        <li><b>Aug 2026:</b> I have been invited to give a talk, “Algorithm Space Distillation - A Perspective for Automated Algorithm Design,” at the 12th Workshop on Evolutionary Computation and Learning (ECOLE 2026).</li>
+        
+        <li><b>Aug 2026:</b> I have been invited to serve as an Associate Editor of <a href='https://cis.ieee.org/publications/t-emerging-topics-in-ci'>IEEE Transactions on Emerging Topics in Computational Intelligence</a>.</li>
+        
+        <li><b>Oct 2025:</b> I started an LLM post-training research collaboration with Huawei as the principal investigator.</li>
+        
+        <li><b>Aug 2025:</b> My NSFC Young Scientists Fund (Category C) project was approved.</li>
+        
+        <li><b>Jul 2025:</b> I become an adjunct Ph.D. supervisor at Beijing Zhongguancun Academy.</li>
+        
+    </ul>
+    
 
     
 
@@ -1069,6 +1099,8 @@
             <p class="activity-category">Invited Talks:</p>
             <ul class="activity-content">
                 
+                <li>“Algorithm Space Distillation - A Perspective for Automated Algorithm Design”, 第十二届演化计算与学习研讨会 (The 12th Workshop on Evolutionary Computation and Learning, ECOLE’2026), 2026年8月17日, 南京.</li>
+                
                 <li>“Learn to Optimize - An Algorithm Space Distillation Perspective”, 计算智能与学习优化交流会, 2026年6月29日, 北京航空航天大学.</li>
                 
                 <li>“优化算法的自动生成”, 2025湖南人工智能大会-智能系统与优化论坛, 2025年11月22日, 湘潭.</li>
@@ -1095,7 +1127,7 @@
     
 
     <h3 id="tag_students">
-        People
+        People & Alumni
     </h3>
 
     
@@ -1136,6 +1168,19 @@
                 <li>2025 - : Zubin Zheng 郑祖彬</li>
                 
                 <li>2025 - : Zhucai Duan 段柱材 (joint M.Sc. program with Ping An Technology)</li>
+                
+            </ul>
+        </li>
+    
+        <li class="activity-item">
+            <p class="activity-category">Alumni</p>
+            <ul class="activity-content people-list">
+                
+                <li>2021 - 2026: <a href='https://colinlu50.github.io'>Ning Lu 卢宁</a>, Ph.D. student (co-supervised with Prof. Ke Tang and Prof. Qi Wang). Next position / 去向: Bailing LLM Post-Training Team, Ant Group (Ant Star-Plan A Talent Program) / 蚂蚁集团百灵大模型后训练组（蚂蚁星-PlanA人才计划）</li>
+                
+                <li>2020 - 2026: Jiahao Wu 吴嘉豪, Ph.D. student (co-supervised with Prof. Ke Tang). Next position / 去向: Postdoctoral Researcher, The Hong Kong Polytechnic University / 香港理工大学博士后</li>
+                
+                <li>2020 - 2026: Xuanfeng Li 李炫锋, Ph.D. student (co-supervised with Prof. Ke Tang). Next position / 去向: Postdoctoral Researcher, Harbin Institute of Technology, Shenzhen / 哈尔滨工业大学（深圳）博士后</li>
                 
             </ul>
         </li>
@@ -1184,7 +1229,7 @@
 
             <!-- 2. Last Updated 部分 -->
             <!-- 使用 Python (build.py) 传入的 build_date 变量 -->
-            &copy; Shengcai LIU. Last updated: 2026-08-13.
+            &copy; Shengcai LIU. Last updated: 2026-08-20.
         </p>
     </div>
     <script type="text/javascript">
