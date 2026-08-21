@@ -50,6 +50,8 @@
         body>blockquote,
         body>ul,
         body>ol,
+        .news-panel,
+        .publication-filter-bar,
         .publication-group,
         #nav_bar,
         .page-footer {
@@ -164,6 +166,126 @@
             font-weight: 640;
         }
 
+        .publication-filter-bar {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: -2px;
+            margin-bottom: 20px;
+        }
+
+        .publication-filter-label {
+            margin-right: 2px;
+            color: #374151;
+            font-size: 13px;
+            font-weight: 650;
+        }
+
+        .publication-filter-group {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+        .publication-filter-group-label {
+            margin-right: 2px;
+            color: #6b7280;
+            font-size: 12px;
+            font-weight: 620;
+        }
+
+        .publication-filter {
+            appearance: none;
+            margin: 0;
+            padding: 4px 8px;
+            border: 1px solid #d6dce5;
+            border-radius: 4px;
+            background: #fff;
+            color: #4b5563;
+            font: inherit;
+            font-size: 13px;
+            line-height: 1.4;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .publication-filter:hover,
+        .publication-filter:focus-visible {
+            border-color: #b9c6d3;
+            background: #f3f5f7;
+            color: var(--heading-color);
+            outline: none;
+        }
+
+        .publication-filter[aria-pressed="true"] {
+            border-color: #b9c6d3;
+            background: #e9eef3;
+            color: #243447;
+            font-weight: 650;
+        }
+
+        .publication-filter-separator {
+            width: 1px;
+            height: 18px;
+            margin: 0 3px;
+            background: var(--rule-color);
+        }
+
+        .news-panel {
+            margin-bottom: 24px;
+        }
+
+        .news-window {
+            height: 175px;
+            overflow-y: auto;
+            overscroll-behavior: contain;
+            scrollbar-gutter: stable;
+            border: 1px solid var(--rule-color);
+            border-radius: 6px;
+            background: #fff;
+        }
+
+        .news-window:focus-visible {
+            border-color: #aebdcb;
+            outline: 2px solid #e6edf4;
+            outline-offset: 2px;
+        }
+
+        .news-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .news-item {
+            display: grid;
+            grid-template-columns: 82px minmax(0, 1fr);
+            gap: 10px;
+            padding: 8px 12px;
+            border-bottom: 1px solid #e8ecf1;
+        }
+
+        .news-item:last-child {
+            border-bottom: 0;
+        }
+
+        .news-date {
+            color: #4b5563;
+            font-size: 13px;
+            font-weight: 650;
+            line-height: 1.42;
+            font-variant-numeric: tabular-nums;
+            white-space: nowrap;
+        }
+
+        .news-content {
+            min-width: 0;
+            color: var(--muted-color);
+            line-height: 1.42;
+        }
+
         body>p {
             margin-top: 18px;
             margin-bottom: 8px;
@@ -272,7 +394,7 @@
             display: flex;
             flex-wrap: nowrap;
             justify-content: center;
-            gap: 2px 4px;
+            gap: 2px 3px;
             margin: 0;
             padding: 8px 0;
             list-style: none;
@@ -291,11 +413,11 @@
         #nav_bar ul li a {
             display: block;
             margin: 0;
-            padding: 6px 4px;
+            padding: 6px 3px;
             background: transparent;
             text-decoration: none;
             color: var(--link-color);
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 500;
             font-family: inherit;
             border-radius: 4px;
@@ -581,6 +703,20 @@
                 font-size: 15px;
             }
 
+            .publication-filter-bar {
+                align-items: flex-start;
+            }
+
+            .news-window {
+                height: 210px;
+            }
+
+            .news-item {
+                grid-template-columns: 74px minmax(0, 1fr);
+                gap: 8px;
+                padding: 8px 10px;
+            }
+
             .publication-item {
                 padding-left: 0;
             }
@@ -646,15 +782,49 @@
 
     {% for section in sections %}
 
-    <h3 id="{{ section.id }}">
-        {{ section.header_title }}
-    </h3>
+    <h3 id="{{ section.id }}">{{ section.header_title }}</h3>
 
     {% if section.type == 'publications' and section.groups and section.groups[0].note %}
     <p class="section-header-note">{{ section.groups[0].note }}</p>
     {% endif %}
 
-    {% if section.type == 'interests' %}
+    {% if section.type == 'publications' %}
+    <div class="publication-filter-bar" aria-label="Filter publications">
+        <span class="publication-filter-label">Filter by:</span>
+        <button class="publication-filter" type="button" data-publication-filter="all" aria-pressed="true">All</button>
+        <span class="publication-filter-separator" aria-hidden="true"></span>
+        <span class="publication-filter-group" role="group" aria-label="Filter by year">
+            <span class="publication-filter-group-label">Year</span>
+            <button class="publication-filter" type="button" data-publication-filter="year:2026" aria-pressed="false">2026</button>
+            <button class="publication-filter" type="button" data-publication-filter="year:2025" aria-pressed="false">2025</button>
+            <button class="publication-filter" type="button" data-publication-filter="year:before-2025" aria-pressed="false">2024 and before</button>
+        </span>
+        <span class="publication-filter-separator" aria-hidden="true"></span>
+        <span class="publication-filter-group" role="group" aria-label="Filter by topic">
+            <span class="publication-filter-group-label">Topic</span>
+            <button class="publication-filter" type="button" data-publication-filter="tag:L2O" aria-pressed="false">L2O</button>
+            <button class="publication-filter" type="button" data-publication-filter="tag:LLM/Agent" aria-pressed="false">LLM/Agent</button>
+            <button class="publication-filter" type="button" data-publication-filter="tag:Applications" aria-pressed="false">Applications</button>
+            <button class="publication-filter" type="button" data-publication-filter="tag:Quantum" aria-pressed="false">Quantum</button>
+        </span>
+    </div>
+    {% endif %}
+
+    {% if section.type == 'news' %}
+    <div class="news-panel">
+        <div class="news-window" tabindex="0" aria-label="Recent news items">
+            <ul class="news-list">
+                {% for item in section.entries %}
+                <li class="news-item">
+                    <time class="news-date">{{ item.date }}</time>
+                    <span class="news-content">{{ item.content }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    {% elif section.type == 'interests' %}
     <blockquote>
         {% if section.intro %}
         <p class="section-intro" style="padding:0px;text-align: left">{{ section.intro }}</p>
@@ -708,7 +878,7 @@
     </p>
     <ol class="publication-list">
         {% for paper in group.entries %}
-        <li class="publication-item">
+        <li class="publication-item" data-publication-item>
             <span class="publication-authors">{{ paper.authors }}.</span>
             <span class="publication-title">{{ paper.title }}.</span>
             <span class="publication-venue">{{ paper.venue }}{% if paper.tags %}{% for tag in paper.tags %} <span class="publication-tag" data-tag="{{ tag }}">{{ tag }}</span>{% endfor %}{% elif paper.tag %} <span class="publication-tag" data-tag="{{ paper.tag }}">{{ paper.tag }}</span>{% endif %}</span>
@@ -792,6 +962,57 @@
                 button.setAttribute('aria-expanded', String(!collapsed));
             });
         });
+
+        function getPublicationYear(item) {
+            var venue = item.querySelector('.publication-venue');
+            var text = venue ? venue.textContent : '';
+            var yearMatch = text.match(/\b(20\d{2})\b/);
+            if (yearMatch) {
+                return Number(yearMatch[1]);
+            }
+            var arxivMatch = text.match(/arXiv:(\d{2})\d{2}\./i);
+            return arxivMatch ? 2000 + Number(arxivMatch[1]) : null;
+        }
+
+        function publicationMatchesFilter(item, filter) {
+            if (filter === 'all') {
+                return true;
+            }
+            if (filter.indexOf('year:') === 0) {
+                var year = getPublicationYear(item);
+                var value = filter.slice(5);
+                return value === 'before-2025' ? year !== null && year <= 2024 : year === Number(value);
+            }
+            if (filter.indexOf('tag:') === 0) {
+                var tag = filter.slice(4);
+                return Array.from(item.querySelectorAll('.publication-tag')).some(function (label) {
+                    return label.getAttribute('data-tag') === tag;
+                });
+            }
+            return true;
+        }
+
+        function applyPublicationFilter(filter) {
+            document.querySelectorAll('[data-publication-item]').forEach(function (item) {
+                item.hidden = !publicationMatchesFilter(item, filter);
+            });
+            document.querySelectorAll('.publication-group').forEach(function (group) {
+                var hasMatch = Array.from(group.querySelectorAll('[data-publication-item]')).some(function (item) {
+                    return !item.hidden;
+                });
+                group.hidden = !hasMatch;
+            });
+            document.querySelectorAll('[data-publication-filter]').forEach(function (button) {
+                button.setAttribute('aria-pressed', String(button.getAttribute('data-publication-filter') === filter));
+            });
+        }
+
+        document.querySelectorAll('[data-publication-filter]').forEach(function (button) {
+            button.addEventListener('click', function () {
+                applyPublicationFilter(button.getAttribute('data-publication-filter'));
+            });
+        });
+
     </script>
 </body>
 

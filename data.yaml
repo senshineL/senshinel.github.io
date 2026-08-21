@@ -8,7 +8,7 @@ profile:
     - "Southern University of Science and Technology"
     # - "兼职导师, 北京中关村学院"
   office: "Room 311, South Tower, College of Engineering"
-  address: "No. 1088 Xueyuan Avenue, Shenzhen, China 518055"
+  address: "No. 1088 Xueyuan Avenue, Shenzhen 518055, China"
   email: "liusc3 AT sustech DOT edu DOT cn"
   photo_path: "./files/shengcai_liu.jpg"
   logo1_path: "./files/logo_1.jpg"
@@ -25,13 +25,29 @@ sections:
   - id: "tag_news"
     nav_label: "[Recent News]"
     header_title: "Recent News"
-    type: "simple_list"
+    type: "news"
     entries:
-      - "<b>Aug 2026:</b> I have been invited to give a talk, “Algorithm Space Distillation - A Perspective for Automated Algorithm Design,” at the 12th Workshop on Evolutionary Computation and Learning (ECOLE 2026)."
-      - "<b>Aug 2026:</b> I have been invited to serve as an Associate Editor of <a href='https://cis.ieee.org/publications/t-emerging-topics-in-ci'>IEEE Transactions on Emerging Topics in Computational Intelligence</a>."
-      - "<b>Oct 2025:</b> I started an LLM post-training research collaboration with Huawei as the principal investigator."
-      - "<b>Aug 2025:</b> My NSFC Young Scientists Fund (Category C) project was approved."
-      - "<b>Jul 2025:</b> I become an adjunct Ph.D. supervisor at Beijing Zhongguancun Academy."
+      - year: 2026
+        date: "Aug 2026"
+        content: "I have been invited to give a talk at the 12th Workshop on Evolutionary Computation and Learning (ECOLE 2026)."
+      - year: 2026
+        date: "Aug 2026"
+        content: "I have been invited to serve as an Associate Editor of <a href='https://cis.ieee.org/publications/t-emerging-topics-in-ci'>IEEE Transactions on Emerging Topics in Computational Intelligence</a>."
+      - year: 2025
+        date: "Nov 2025"
+        content: "I was invited to give a talk at the 2025 Hunan Artificial Intelligence Conference."
+      - year: 2025
+        date: "Oct 2025"
+        content: "I started an LLM post-training research collaboration with Huawei as the principal investigator."
+      - year: 2025
+        date: "Aug 2025"
+        content: "My NSFC Young Scientists Fund (Category C) project was approved."
+      - year: 2025
+        date: "Jul 2025"
+        content: "I become an adjunct Ph.D. supervisor at Beijing Zhongguancun Academy."
+      - year: 2025
+        date: "Apr 2025"
+        content: "I was invited to give a talk at the Intelligent Decision Forum, organized by the Institute of Automation, Chinese Academy of Sciences."
 
   - id: "tag_ri"
     nav_label: "[Research Interests]"
@@ -124,10 +140,6 @@ sections:
             title: "Large Language Model-Driven Cooperative Operator Ensemble Evolution for Permutation Flow Shop Scheduling"
             tags: ["L2O", "LLM/Agent", "Applications"]
             venue: "arXiv preprint arXiv:2606.15334. <a href='https://arxiv.org/abs/2606.15334'>[Arxiv]</a>"
-          - authors: "Ning Lu, Baijiong Lin, <b>Shengcai Liu*</b>, Jiahao Wu, Haoze Lv, Yanbin Wei, Lingting Zhu, Shengju Qian, Xin Wang, Ying-Cong Chen, Qi Wang, Ke Tang"
-            title: "Policy and World Modeling Co-Training for Language Agents"
-            tags: ["LLM/Agent"]
-            venue: "arXiv preprint arXiv:2606.02388. <a href='https://arxiv.org/abs/2606.02388'>[Arxiv]</a>"
           - authors: "Haoze Lv, Ning Lu, Ziang Zhou, Yew-Soon Ong, <b>Shengcai Liu*</b>"
             title: "AHD Agent: Agentic Reinforcement Learning for Automatic Heuristic Design"
             tags: ["L2O", "LLM/Agent"]
@@ -234,14 +246,18 @@ sections:
             venue: "<b>IEEE Transactions on Evolutionary Computation</b>, 2021, 25(3): 595-607. <a href='https://ieeexplore.ieee.org/document/9354852/'>[Paper]</a> <a href='https://arxiv.org/pdf/2007.00501.pdf'>[Arxiv]</a> <a href='https://github.com/senshineL/CEPS'>[Code]</a>"
       - title: "Conference Papers"
         entries: # 原 items 改为 entries
+          - authors: "Ning Lu, Baijiong Lin, <b>Shengcai Liu*</b>, Jiahao Wu, Haoze Lv, Yanbin Wei, Lingting Zhu, Shengju Qian, Xin Wang, Ying-Cong Chen, Qi Wang, Ke Tang"
+            title: "Policy and World Modeling Co-Training for Language Agents"
+            tags: ["LLM/Agent"]
+            venue: "In: <b>Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP'2026)</b>, Budapest, Hungary, Oct 25 - 27, 2026, To appear. <a href='https://arxiv.org/abs/2606.02388'>[Arxiv]</a>"
           - authors: "Jiyu Luo, Shaoyu Chen, Jingwei Sun*, <b>Shengcai Liu*</b>, Ke Tang, Guangzhong Sun*"
             title: "EMO: Energy Efficiency Modeling and Optimization for AI Workloads"
             tags: ["L2O", "LLM/Agent"]
-            venue: "In: <b>Proceedings of The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC'2026)</b>, Chicago, IL, Nov 15 - 20, 2026, To appear."
+            venue: "In: <b>Proceedings of The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC'2026)</b>, Chicago, IL, Nov 15 - 20, 2026, To appear. <a href='https://arxiv.org/abs/2607.12324'>[Arxiv]</a>"
           - authors: "Zubin Zheng, Jiahao Wu, <b>Shengcai Liu*</b>"
             title: "Neural QAOA<sup>2</sup>: Differentiable Joint Graph Partitioning and Parameter Initialization for Quantum Combinatorial Optimization"
             tags: ["L2O", "Quantum"]
-            venue: "In: <b>Proceedings of the 43rd International Conference on Machine Learning (ICML'2026)</b>, Seoul, South Korea, Jul 6 - 11, 2026."
+            venue: "In: <b>Proceedings of the 43rd International Conference on Machine Learning (ICML'2026)</b>, Seoul, South Korea, Jul 6 - 11, 2026. <a href='https://openreview.net/forum?id=knVbandOWj'>[Paper]</a> <a href='https://arxiv.org/abs/2605.13072'>[Arxiv]</a>"
           - authors: "Zhangying Feng, Qianglong Chen, Ning Lu, Yongqian Li, Siqi Cheng, Shuangmu Peng, Duyu Tang, <b>Shengcai Liu*</b>, Zhirui Zhang*"
             title: "Is PRM Necessary? Problem-Solving RL Implicitly Induces PRM Capability in LLMs"
             tags: ["LLM/Agent"]
@@ -342,7 +358,7 @@ sections:
       - title: "Alumni"
         entries:
           - "2021 - 2026: <a href='https://colinlu50.github.io'>Ning Lu 卢宁</a>, Ph.D. student (co-supervised with Prof. Ke Tang and Prof. Qi Wang). Next position / 去向: Bailing LLM Post-Training Team, Ant Group (Ant Star-Plan A Talent Program) / 蚂蚁集团百灵大模型后训练组（蚂蚁星-PlanA人才计划）"
-          - "2020 - 2026: Jiahao Wu 吴嘉豪, Ph.D. student (co-supervised with Prof. Ke Tang). Next position / 去向: Postdoctoral Researcher, The Hong Kong Polytechnic University / 香港理工大学博士后"
+          - "2020 - 2026: <a href='https://jiahaowugit.github.io/jiahaowu.github.io/'>Jiahao Wu 吴嘉豪</a>, Ph.D. student (co-supervised with Prof. Ke Tang). Next position / 去向: Postdoctoral Researcher, The Hong Kong Polytechnic University / 香港理工大学博士后"
           - "2020 - 2026: Xuanfeng Li 李炫锋, Ph.D. student (co-supervised with Prof. Ke Tang). Next position / 去向: Postdoctoral Researcher, Harbin Institute of Technology, Shenzhen / 哈尔滨工业大学（深圳）博士后"
 
   - id: "tag_teaching"
