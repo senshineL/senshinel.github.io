@@ -260,9 +260,9 @@
         }
 
         .news-item {
-            display: grid;
-            grid-template-columns: 82px minmax(0, 1fr);
-            gap: 10px;
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
             padding: 8px 12px;
             border-bottom: 1px solid #e8ecf1;
         }
@@ -272,6 +272,7 @@
         }
 
         .news-date {
+            flex: 0 0 auto;
             color: #4b5563;
             font-size: 13px;
             font-weight: 650;
@@ -281,9 +282,16 @@
         }
 
         .news-content {
+            flex: 1 1 auto;
             min-width: 0;
             color: var(--muted-color);
             line-height: 1.42;
+        }
+
+        .news-category {
+            margin-right: 4px;
+            color: var(--text-color);
+            font-weight: 400;
         }
 
         body>p {
@@ -712,8 +720,7 @@
             }
 
             .news-item {
-                grid-template-columns: 74px minmax(0, 1fr);
-                gap: 8px;
+                gap: 5px;
                 padding: 8px 10px;
             }
 
@@ -817,7 +824,7 @@
                 {% for item in section.entries %}
                 <li class="news-item">
                     <time class="news-date">{{ item.date }}</time>
-                    <span class="news-content">{{ item.content }}</span>
+                    <span class="news-content"><span class="news-category">[{{ item.category }}]</span>{{ item.content }}</span>
                 </li>
                 {% endfor %}
             </ul>

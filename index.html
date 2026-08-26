@@ -260,9 +260,9 @@
         }
 
         .news-item {
-            display: grid;
-            grid-template-columns: 82px minmax(0, 1fr);
-            gap: 10px;
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
             padding: 8px 12px;
             border-bottom: 1px solid #e8ecf1;
         }
@@ -272,6 +272,7 @@
         }
 
         .news-date {
+            flex: 0 0 auto;
             color: #4b5563;
             font-size: 13px;
             font-weight: 650;
@@ -281,9 +282,16 @@
         }
 
         .news-content {
+            flex: 1 1 auto;
             min-width: 0;
             color: var(--muted-color);
             line-height: 1.42;
+        }
+
+        .news-category {
+            margin-right: 4px;
+            color: var(--text-color);
+            font-weight: 400;
         }
 
         body>p {
@@ -712,8 +720,7 @@
             }
 
             .news-item {
-                grid-template-columns: 74px minmax(0, 1fr);
-                gap: 8px;
+                gap: 5px;
                 padding: 8px 10px;
             }
 
@@ -820,38 +827,113 @@
             <ul class="news-list">
                 
                 <li class="news-item">
-                    <time class="news-date">Aug 2026</time>
-                    <span class="news-content">I have been invited to give a talk at the 12th Workshop on Evolutionary Computation and Learning (ECOLE 2026).</span>
+                    <time class="news-date">Aug 23, 2026</time>
+                    <span class="news-content"><span class="news-category">[TETCI]</span>Our work on <a href='https://arxiv.org/abs/2510.26444'>personalized treatment outcome prediction</a> has been accepted to IEEE TETCI.</span>
                 </li>
                 
                 <li class="news-item">
-                    <time class="news-date">Aug 2026</time>
-                    <span class="news-content">I have been invited to serve as an Associate Editor of <a href='https://cis.ieee.org/publications/t-emerging-topics-in-ci'>IEEE Transactions on Emerging Topics in Computational Intelligence</a>.</span>
+                    <time class="news-date">Aug 20, 2026</time>
+                    <span class="news-content"><span class="news-category">[EMNLP]</span>Our work on <a href='https://arxiv.org/abs/2606.02388'>language-agent post-training</a> has been accepted to EMNLP 2026.</span>
                 </li>
                 
                 <li class="news-item">
-                    <time class="news-date">Nov 2025</time>
-                    <span class="news-content">I was invited to give a talk at the 2025 Hunan Artificial Intelligence Conference.</span>
+                    <time class="news-date">Aug 13, 2026</time>
+                    <span class="news-content"><span class="news-category">[Career]</span>I have been invited to serve as an Associate Editor of <a href='https://cis.ieee.org/publications/t-emerging-topics-in-ci'>IEEE Transactions on Emerging Topics in Computational Intelligence</a>.</span>
                 </li>
                 
                 <li class="news-item">
-                    <time class="news-date">Oct 2025</time>
-                    <span class="news-content">I started an LLM post-training research collaboration with Huawei as the principal investigator.</span>
+                    <time class="news-date">Jul 4, 2026</time>
+                    <span class="news-content"><span class="news-category">[Invited Talk]</span>I will give a talk at the 12th Workshop on Evolutionary Computation and Learning (ECOLE 2026).</span>
                 </li>
                 
                 <li class="news-item">
-                    <time class="news-date">Aug 2025</time>
-                    <span class="news-content">My NSFC Young Scientists Fund (Category C) project was approved.</span>
+                    <time class="news-date">Jul 3, 2026</time>
+                    <span class="news-content"><span class="news-category">[TPAMI]</span>Our work on <a href='https://arxiv.org/abs/2405.18884'>general-purpose binary optimization</a> has been accepted to IEEE TPAMI.</span>
                 </li>
                 
                 <li class="news-item">
-                    <time class="news-date">Jul 2025</time>
-                    <span class="news-content">I become an adjunct Ph.D. supervisor at Beijing Zhongguancun Academy.</span>
+                    <time class="news-date">Jul 1, 2026</time>
+                    <span class="news-content"><span class="news-category">[SC]</span>Our work on <a href='https://arxiv.org/abs/2607.12324'>energy-efficient AI workloads</a> has been accepted to SC 2026.</span>
                 </li>
                 
                 <li class="news-item">
-                    <time class="news-date">Apr 2025</time>
-                    <span class="news-content">I was invited to give a talk at the Intelligent Decision Forum, organized by the Institute of Automation, Chinese Academy of Sciences.</span>
+                    <time class="news-date">Apr 30, 2026</time>
+                    <span class="news-content"><span class="news-category">[ICML]</span>Our work on <a href='https://openreview.net/forum?id=knVbandOWj'>quantum combinatorial optimization</a> has been accepted to ICML 2026.</span>
+                </li>
+                
+                <li class="news-item">
+                    <time class="news-date">Nov 26, 2025</time>
+                    <span class="news-content"><span class="news-category">[TEVC]</span>Our work on <a href='https://ieeexplore.ieee.org/abstract/document/11271862'>green vehicle routing</a> has been accepted to IEEE TEVC.</span>
+                </li>
+                
+                <li class="news-item">
+                    <time class="news-date">Nov 16, 2025</time>
+                    <span class="news-content"><span class="news-category">[TEVC]</span>Our work on <a href='https://ieeexplore.ieee.org/abstract/document/11261396'>generalizable algorithm portfolios</a> has been accepted to IEEE TEVC.</span>
+                </li>
+                
+                <li class="news-item">
+                    <time class="news-date">Nov 15, 2025</time>
+                    <span class="news-content"><span class="news-category">[Invited Talk]</span>I will give a talk at the 2025 Hunan Artificial Intelligence Conference.</span>
+                </li>
+                
+                <li class="news-item">
+                    <time class="news-date">Oct 30, 2025</time>
+                    <span class="news-content"><span class="news-category">[Funding]</span>I started an LLM post-training research collaboration with Huawei as the principal investigator.</span>
+                </li>
+                
+                <li class="news-item">
+                    <time class="news-date">Sep 18, 2025</time>
+                    <span class="news-content"><span class="news-category">[NeurIPS]</span>Our work on <a href='https://openreview.net/forum?id=ooiHIklvN5'>implicit PRM learning</a> has been accepted to NeurIPS 2025.</span>
+                </li>
+                
+                <li class="news-item">
+                    <time class="news-date">Aug 27, 2025</time>
+                    <span class="news-content"><span class="news-category">[Funding]</span>My NSFC Young Scientists Fund (Category C) project was approved.</span>
+                </li>
+                
+                <li class="news-item">
+                    <time class="news-date">Jul 10, 2025</time>
+                    <span class="news-content"><span class="news-category">[ECAI]</span>Our work on <a href='https://ebooks.iospress.nl/volumearticle/76344'>large-scale neural TSP solving</a> has been accepted to ECAI 2025.</span>
+                </li>
+                
+                <li class="news-item">
+                    <time class="news-date">Jul 1, 2025</time>
+                    <span class="news-content"><span class="news-category">[Career]</span>I become an adjunct Ph.D. supervisor at Beijing Zhongguancun Academy.</span>
+                </li>
+                
+                <li class="news-item">
+                    <time class="news-date">Jun 23, 2025</time>
+                    <span class="news-content"><span class="news-category">[TETCI]</span>Our work on <a href='https://ieeexplore.ieee.org/abstract/document/11048636'>electric vehicle routing</a> has been accepted to IEEE TETCI.</span>
+                </li>
+                
+                <li class="news-item">
+                    <time class="news-date">May 22, 2025</time>
+                    <span class="news-content"><span class="news-category">[TCSS]</span>Our work on <a href='https://ieeexplore.ieee.org/abstract/document/11037661'>real-time influence blocking</a> has been accepted to IEEE TCSS.</span>
+                </li>
+                
+                <li class="news-item">
+                    <time class="news-date">May 1, 2025</time>
+                    <span class="news-content"><span class="news-category">[ICML]</span>Our work on <a href='https://openreview.net/forum?id=QsCDgFKErb'>safe LLM fine-tuning</a> has been accepted to ICML 2025.</span>
+                </li>
+                
+                <li class="news-item">
+                    <time class="news-date">Apr 30, 2025</time>
+                    <span class="news-content"><span class="news-category">[Invited Talk]</span>I will give a talk at the Intelligent Decision Forum, organized by the Institute of Automation, CAS.</span>
+                </li>
+                
+                <li class="news-item">
+                    <time class="news-date">Jan 20, 2025</time>
+                    <span class="news-content"><span class="news-category">[WWW]</span>Our work on <a href='https://dl.acm.org/doi/abs/10.1145/3701716.3715555'>LLM-assisted recommendation condensation</a> has been accepted to WWW 2025.</span>
+                </li>
+                
+                <li class="news-item">
+                    <time class="news-date">Nov 26, 2024</time>
+                    <span class="news-content"><span class="news-category">[ICDE]</span>Our work on <a href='https://ieeexplore.ieee.org/abstract/document/11113161/'>backdoor graph condensation</a> has been accepted to ICDE 2025.</span>
+                </li>
+                
+                <li class="news-item">
+                    <time class="news-date">Oct 22, 2024</time>
+                    <span class="news-content"><span class="news-category">[TKDE]</span>Our work on <a href='https://ieeexplore.ieee.org/abstract/document/10726790'>recommendation data condensation</a> has been accepted to IEEE TKDE.</span>
                 </li>
                 
             </ul>
@@ -883,7 +965,7 @@
     </blockquote>
     
     <ul class="recruitment-callout" style="padding-inline-start:20px;padding-left:20px; color: #FF0000">
-        <p><strong>招募</strong>: 本课题组常年招收硕士/博士研究生、访问学生、博士后、研究助理教授，不定时招收北京中关村学院-南方科技大学联合培养博士生。 欢迎数理基础扎实、代码能力强的同学申请。申请时请将本人自述、成绩单、个人简历及相关能力发送至邮箱 liusc3 AT sustech.edu.cn 以及 chengy6 AT mail.sustech.edu.cn，邮件主题请注明为 申请人姓名+申请xx职位/xxx年入学博士生/硕士生. <br><br> <strong>Recruitment</strong>: We have open positions for M.Sc./Ph.D. students, Visiting Scholars, Postdocs, and Research Assistant Professors. Candidates with strong backgrounds in mathematics and programming are highly encouraged to apply. To Apply: Please email your CV, transcripts, and personal statement to liusc3 AT sustech.edu.cn and chengy6 AT mail.sustech.edu.cn. Subject Line: Name + Position Applied / Intake Year. <br><br> <a class='application-note-link' href='before-you-apply.html'>Before You Apply: Things You Must Know（在你申请之前你必须知道的事）</a>
+        <p><strong>招募</strong>: 本课题组常年招收硕士/博士研究生、访问学生、博士后、研究助理教授，不定时招收北京中关村学院-南方科技大学联合培养博士生。 欢迎数理基础扎实、代码能力强的同学申请。申请时请将本人自述、成绩单、个人简历及相关能力发送至邮箱 liusc3 AT sustech.edu.cn 以及 chengy6 AT mail.sustech.edu.cn，邮件主题请注明为 申请人姓名+申请xx职位/xxx年入学博士生/硕士生. 【由于申请邮件数量较多，恕无法逐一回复。】 <br><br> <strong>Recruitment</strong>: We have open positions for M.Sc./Ph.D. students, Visiting Scholars, Postdocs, and Research Assistant Professors. Candidates with strong backgrounds in mathematics and programming are highly encouraged to apply. To Apply: Please email your CV, transcripts, and personal statement to liusc3 AT sustech.edu.cn and chengy6 AT mail.sustech.edu.cn. Subject Line: Name + Position Applied / Intake Year. [Due to the large volume of applications, I am unable to reply to every email.] <br><br> <a class='application-note-link' href='before-you-apply.html'>Before You Apply: Things You Must Know（在你申请之前你必须知道的事）</a>
 </p>
     </ul>
     
@@ -1028,6 +1110,12 @@
         <strong>Journal Papers</strong>
     </p>
     <ol class="publication-list">
+        
+        <li class="publication-item" data-publication-item>
+            <span class="publication-authors">Wenjie Chen, Li Zhuang, Ziying Luo, Yu Liu, Jiahao Wu, <b>Shengcai Liu*</b>.</span>
+            <span class="publication-title">Personalized Treatment Outcome Prediction from Scarce Data via Dual-Channel Knowledge Distillation and Adaptive Fusion.</span>
+            <span class="publication-venue"><b>IEEE Transactions on Emerging Topics in Computational Intelligence</b>, 2026, To appear. <a href='https://arxiv.org/abs/2510.26444'>[Arxiv]</a> <span class="publication-tag" data-tag="Applications">Applications</span></span>
+        </li>
         
         <li class="publication-item" data-publication-item>
             <span class="publication-authors"><b>Shengcai Liu</b>, Zhiyuan Wang, Yew-Soon Ong, Xin Yao, and Ke Tang.</span>
@@ -1415,7 +1503,7 @@
 
             <!-- 2. Last Updated 部分 -->
             <!-- 使用 Python (build.py) 传入的 build_date 变量 -->
-            &copy; Shengcai LIU. Last updated: 2026-08-21.
+            &copy; Shengcai LIU. Last updated: 2026-08-26.
         </p>
     </div>
     <script type="text/javascript">
