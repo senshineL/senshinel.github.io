@@ -233,6 +233,9 @@ sections:
           #   venue: "arXiv preprint arXiv:2506.22848. <a href='https://arxiv.org/abs/2506.22848.pdf'>[Arxiv]</a>"
       - title: "Journal Papers"
         entries: # 原 items 改为 entries
+          - authors: "<b>Shengcai Liu</b> and Ke Tang"
+            title: "From general problem solver to scalable agentic problem solver"
+            venue: "<b>AI Plus</b> (Commentary), 1: 100009, September 30, 2026. <a href='https://doi.org/10.59717/ipj.aiplus.2026.100009'>[DOI]</a>"
           - authors: "Wenjie Chen, Li Zhuang, Ziying Luo, Yu Liu, Jiahao Wu, <b>Shengcai Liu*</b>"
             title: "Personalized Treatment Outcome Prediction from Scarce Data via Dual-Channel Knowledge Distillation and Adaptive Fusion"
             tags: ["Applications"]
@@ -393,6 +396,7 @@ sections:
           - "Associate Editor, IEEE Transactions on Emerging Topics in Computational Intelligence (2026-)"
           - "北京中关村学院兼职导师 (2025-)"
           - "IEEE Member (2022-)"
+          - "IEEE Computational Intelligence Society (CIS) Member: 2023-"
       - category: "Invited Talks:"
         content:
           - “Algorithm Space Distillation - A Perspective for Automated Algorithm Design”, 第十二届演化计算与学习研讨会 (The 12th Workshop on Evolutionary Computation and Learning, ECOLE’2026), 2026年8月17日, 南京.
