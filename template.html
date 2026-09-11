@@ -937,9 +937,8 @@
         <p style="margin-top: 5px;">
             <!-- 1. 访客统计部分 -->
             {% if footer.show_visitor_count %}
-            <!-- 引入不蒜子脚本；备用地址用于主服务暂时不可用时回退 -->
-            <script async src="https://busuanzi.icodeq.com/busuanzi.pure.mini.js"
-                onerror="this.onerror=null; this.src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js';"></script>
+            <!-- 引入不蒜子脚本 -->
+            <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
             <span id="busuanzi_container_site_pv" style="display:none">
                 {{ footer.text_cn }}: <span id="busuanzi_value_site_pv" style="font-weight: bold; color: #000;"></span>
             </span>
