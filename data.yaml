@@ -28,6 +28,10 @@ sections:
     type: "news"
     entries:
       - year: 2026
+        date: "Sep 24, 2026"
+        category: "NeurIPS"
+        content: "Our work on <a href='https://arxiv.org/abs/2603.25184'>rollout-efficient reasoning model RL</a> has been accepted to NeurIPS 2026."
+      - year: 2026
         date: "Aug 23, 2026"
         category: "TETCI"
         content: "Our work on <a href='https://arxiv.org/abs/2510.26444'>personalized treatment outcome prediction</a> has been accepted to IEEE TETCI."
@@ -213,10 +217,6 @@ sections:
             title: "AHD Agent: Agentic Reinforcement Learning for Automatic Heuristic Design"
             tags: ["L2O", "LLM/Agent"]
             venue: "arXiv preprint arXiv:2605.08756. <a href='https://arxiv.org/abs/2605.08756'>[Arxiv]</a>"
-          - authors: "Jiahao Wu, Ning Lu, <b>Shengcai Liu*</b>, Kun Wang, Yanting Yang, Bailong Lin, Chen Jason Zhang, Li Qing, Ke Tang"
-            title: "Train at Moving Edge: Online-Verified Prompt Selection for Efficient RL Training of Large Reasoning Models"
-            tags: ["LLM/Agent"]
-            venue: "arXiv preprint arXiv:2603.25184. <a href='https://arxiv.org/abs/2603.25184'>[Arxiv]</a>"
           # - authors: "Zhiyuan Wang, <b>Shengcai Liu</b>, Shaofeng Zhang, Ke Tang"
           #   title: "A Novel Population Initialization Method via Adaptive Experience Transfer for General-Purpose Binary Evolutionary Optimization"
           #   venue: "arXiv preprint arXiv:2512.00341. <a href='https://arxiv.org/abs/2512.00341.pdf'>[Arxiv]</a>"
@@ -318,6 +318,10 @@ sections:
             venue: "<b>IEEE Transactions on Evolutionary Computation</b>, 2021, 25(3): 595-607. <a href='https://ieeexplore.ieee.org/document/9354852/'>[Paper]</a> <a href='https://arxiv.org/pdf/2007.00501.pdf'>[Arxiv]</a> <a href='https://github.com/senshineL/CEPS'>[Code]</a>"
       - title: "Conference Papers"
         entries: # 原 items 改为 entries
+          - authors: "Jiahao Wu, Ning Lu, <b>Shengcai Liu*</b>, Kun Wang, Yanting Yang, Baijiong Lin, Chen Jason Zhang, Li Qing, Ke Tang"
+            title: "Train at the Moving Edge: Rollout-Efficient RL for Large Reasoning Models"
+            tags: ["LLM/Agent"]
+            venue: "In: <b>Proceedings of the 40th Annual Conference on Neural Information Processing Systems (NeurIPS'2026)</b>, Dec 2026, To appear. <a href='https://arxiv.org/abs/2603.25184'>[Arxiv]</a>"
           - authors: "Ning Lu, Baijiong Lin, <b>Shengcai Liu*</b>, Jiahao Wu, Haoze Lv, Yanbin Wei, Lingting Zhu, Shengju Qian, Xin Wang, Ying-Cong Chen, Qi Wang, Ke Tang"
             title: "Policy and World Modeling Co-Training for Language Agents"
             tags: ["LLM/Agent"]
