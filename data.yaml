@@ -235,7 +235,7 @@ sections:
         entries: # 原 items 改为 entries
           - authors: "<b>Shengcai Liu</b> and Ke Tang"
             title: "From general problem solver to scalable agentic problem solver"
-            venue: "<b>AI Plus</b> (Commentary), 1: 100009, September 30, 2026. <a href='https://doi.org/10.59717/ipj.aiplus.2026.100009'>[DOI]</a>"
+            venue: "<b>AI Plus</b> (Commentary), 1: 100009, September 30, 2026. <a href='https://www.the-innovation.org/ai-plus/article/doi/10.59717/ipj.aiplus.2026.100009'>[Paper]</a>"
           - authors: "Wenjie Chen, Li Zhuang, Ziying Luo, Yu Liu, Jiahao Wu, <b>Shengcai Liu*</b>"
             title: "Personalized Treatment Outcome Prediction from Scarce Data via Dual-Channel Knowledge Distillation and Adaptive Fusion"
             tags: ["Applications"]
