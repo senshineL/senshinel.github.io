@@ -28,6 +28,10 @@ sections:
     type: "news"
     entries:
       - year: 2026
+        date: "Oct 5, 2026"
+        category: "TETCI"
+        content: "Our work on <a href='https://arxiv.org/abs/2507.21740'>knowledge-guided arc routing</a> has been accepted to IEEE TETCI."
+      - year: 2026
         date: "Sep 24, 2026"
         category: "NeurIPS"
         content: "Our work on <a href='https://arxiv.org/abs/2603.25184'>rollout-efficient reasoning model RL</a> has been accepted to NeurIPS 2026."
@@ -233,6 +237,10 @@ sections:
           #   venue: "arXiv preprint arXiv:2506.22848. <a href='https://arxiv.org/abs/2506.22848.pdf'>[Arxiv]</a>"
       - title: "Journal Papers"
         entries: # 原 items 改为 entries
+          - authors: "Qingya Li, <b>Shengcai Liu*</b>, Wenjie Chen, Juan Zou, Ke Tang, and Xin Yao"
+            title: "Knowledge-Guided Memetic Algorithm for Capacitated Arc Routing Problems with Time-Dependent Service Costs"
+            tags: ["Applications"]
+            venue: "<b>IEEE Transactions on Emerging Topics in Computational Intelligence</b>, 2026, To appear. <a href='https://arxiv.org/abs/2507.21740'>[Arxiv]</a>"
           - authors: "<b>Shengcai Liu</b> and Ke Tang"
             title: "From general problem solver to scalable agentic problem solver"
             venue: "<b>AI Plus</b> (Commentary), 1: 100009, September 30, 2026. <a href='https://www.the-innovation.org/ai-plus/article/doi/10.59717/ipj.aiplus.2026.100009'>[Paper]</a>"
