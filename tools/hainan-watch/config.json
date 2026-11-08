@@ -1,0 +1,9 @@
+{
+  "flight_number": "HU7711",
+  "departure_date": "2026-11-09",
+  "origin": "PEK",
+  "destination": "SZX",
+  "interval_seconds": 1800,
+  "minimum_qualifying_rate": "0.50",
+  "browser_channel": "msedge"
+}
