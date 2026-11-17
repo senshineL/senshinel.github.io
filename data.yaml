@@ -28,6 +28,10 @@ sections:
     type: "news"
     entries:
       - year: 2026
+        date: "Nov 17, 2026"
+        category: "TEVC"
+        content: "Our work on <a href='https://arxiv.org/abs/2606.15334'>LLM-driven flow shop scheduling</a> has been accepted to IEEE TEVC."
+      - year: 2026
         date: "Nov 7, 2026"
         category: "Invited Talk"
         content: "I gave a talk at the 2026 China Software Conference’s Forum on Constraint Solving Technologies and Applications."
@@ -217,10 +221,6 @@ sections:
             title: "Learning-Augmented Algorithms for Online Vertex Cover"
             tags: ["L2O"]
             venue: "arXiv preprint arXiv:2606.22831. <a href='https://arxiv.org/abs/2606.22831'>[Arxiv]</a>"
-          - authors: "Rui Xu, Yufan Liao, Haoze Lv, <b>Shengcai Liu*</b>, Yi Mei, Ke Tang"
-            title: "Large Language Model-Driven Cooperative Operator Ensemble Evolution for Permutation Flow Shop Scheduling"
-            tags: ["L2O", "LLM/Agent", "Applications"]
-            venue: "arXiv preprint arXiv:2606.15334. <a href='https://arxiv.org/abs/2606.15334'>[Arxiv]</a>"
           - authors: "Haoze Lv, Ning Lu, Ziang Zhou, Yew-Soon Ong, <b>Shengcai Liu*</b>"
             title: "AHD Agent: Agentic Reinforcement Learning for Automatic Heuristic Design"
             tags: ["L2O", "LLM/Agent"]
@@ -241,6 +241,10 @@ sections:
           #   venue: "arXiv preprint arXiv:2506.22848. <a href='https://arxiv.org/abs/2506.22848.pdf'>[Arxiv]</a>"
       - title: "Journal Papers"
         entries: # 原 items 改为 entries
+          - authors: "Rui Xu, Yufan Liao, Haoze Lv, <b>Shengcai Liu*</b>, Yi Mei, Ke Tang"
+            title: "Large Language Model-Driven Cooperative Operator Ensemble Evolution for Permutation Flow Shop Scheduling"
+            tags: ["L2O", "LLM/Agent", "Applications"]
+            venue: "<b>IEEE Transactions on Evolutionary Computation</b>, 2026, To appear. <a href='https://arxiv.org/abs/2606.15334'>[Arxiv]</a>"
           - authors: "Qingya Li, <b>Shengcai Liu*</b>, Wenjie Chen, Juan Zou, Ke Tang, and Xin Yao"
             title: "Knowledge-Guided Memetic Algorithm for Capacitated Arc Routing Problems with Time-Dependent Service Costs"
             tags: ["Applications"]
